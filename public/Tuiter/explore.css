@@ -1,0 +1,101 @@
+/** Things mentioned in Preamble for Explore */
+
+.wd-borders-specific{
+    border-color: rgb(47, 51, 54);
+    border-style: solid
+}
+
+.wd-border-under{
+    border-bottom-color: rgb(47, 51, 54);
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+}
+
+.wd-padding-specific{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.wd-color-black{ background-color: black;}
+
+/** all content is offset 16px from left */
+/** all classes prefixed with wd */
+
+/** Input Bar Section */
+.wd-input-bar{
+    background-color: darkgray;
+    width: 75%;
+    color: white;
+    border-radius: 10px;
+}
+
+.pos-float-12pt{
+    background-color: black;
+    color: white;
+    float: right;
+}
+
+/** Bookmarks Section */
+
+/** Challenge advice, justify content */
+.wd-flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-highlight-color{
+    color: rgb(29,161,242);
+    font-size: 15px;
+}
+
+.wd-border-under{
+    border-bottom: rgb(29,161,242);
+}
+
+.wd-link-color{
+    color: rgb(110,118,125);
+    font-size: 15px;
+}
+
+/** Section C Part */
+
+.wd-grid-left-text{
+    float: left;
+    width: 75%
+}
+
+.wd-grid-right-image{
+    float: left;
+    width: 25%;
+}
+
+.wd-suggested-post{
+    background-color: black;
+    color: white;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-trending-font{
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-float-left{
+    float: left;
+    width: 50%;
+}
+
+.wd-author-font{
+    color: white;
+    font-size: 15px;
+}
+
+.wd-image-format{
+    /**should be 16px from right */
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
