@@ -44,6 +44,7 @@
 
 /** Bookmark guidelines */
 .wd-avatar-photo{
+    float: left;
     border-radius: 50%;
     width: 48px;
     margin-top: 12px;
@@ -51,8 +52,9 @@
 }
 
 .wd-tweet-info-pos{
+    float: left;
     margin-top: 12px;
-    margin-left: 70px;
+    margin-left: 5px;
 }
 
 .wd-author-font{
@@ -65,15 +67,12 @@
     color: lightgray;
 }
 
-.wd-post-font{
-    color: white;
-    font-size: 15px;
-    /** width can't be > 506 px, 16 px to left of right edge and 12 px below image E */
-}
-
 /** Section D Guidelines */
 .wd-body-text{
-    padding-left: 16px;
+    padding-left: 72px;
+    padding-top: 30px;
+    color: white;
+    font-size: 15px;
     width: 506px;
     padding-bottom: 12px;
 }
@@ -126,7 +125,7 @@
 .wd-stats-container{
     display: flex;
     padding-left: 16px;
-    padding-top: 10px;
+    padding-top: 12px;
     width: 504px;
     justify-content: space-evenly;
 }
