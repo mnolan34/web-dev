@@ -1,10 +1,90 @@
+/** Generic Guidelines */
 .wd-suggested-post{
     background-color: black;
     color: white;
     border-color: rgb(47, 51, 54);
     border-style: solid;
 }
-
+.wd-suggested-borders{
+    border-color: rgb(47,51,54);
+}
 .wd-color-black{
     background-color: black;
+}
+
+/** Header guidelines */
+
+.wd-title-font{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-handle-font{
+    color: lightgray;
+    font-size: 13px;
+}
+
+/** Bookmark guidelines */
+.wd-avatar-photo{
+    border-radius: 50%;
+    width: 48px;
+}
+
+.wd-author-font{
+    font-size: 15px;
+    color:white
+}
+
+.wd-AT-font{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-post-font{
+    color: white;
+    font-size: 15px;
+    /** width can't be > 506 px, 16 px to left of right edge and 12 px below image E */
+}
+
+/* Image E Guidelines */
+.wd-image-format{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /**12 px to the right of the avatar image */
+}
+
+/** Section F Guidelines */
+.wd-article-title{
+    color: white;
+    font-size: 15px;
+}
+
+.wd-article-words{
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-article-padding{
+    padding: 12px;
+}
+
+.wd-article-text-borders{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.wd-article-box{
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+/** Section G Guidelines */
+.wd-icon-color{
+    color: white;
+}
+
+.wd-heart-color{
+    color: red;
 }
