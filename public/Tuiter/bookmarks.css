@@ -4,6 +4,7 @@
     color: white;
     border-color: rgb(47, 51, 54);
     border-style: solid;
+    padding-bottom: 10px;
 }
 .wd-suggested-borders{
     border-color: rgb(47,51,54);
@@ -13,10 +14,27 @@
 }
 
 /** Header guidelines */
+.wd-flex-container{
+    display: flex;
+    padding-left: 16px;
+    padding-top: 10px;
+}
 
 .wd-title-font{
     color: white;
     font-size: 20px;
+}
+
+.wd-title-bottom{
+    margin-bottom: 1px;
+}
+
+.wd-margin-left{
+    margin-left: 12px;
+}
+
+.wd-handle-top{
+    margin-top: 1px;
 }
 
 .wd-handle-font{
@@ -28,6 +46,13 @@
 .wd-avatar-photo{
     border-radius: 50%;
     width: 48px;
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-tweet-info-pos{
+    margin-top: 12px;
+    margin-left: 70px;
 }
 
 .wd-author-font{
@@ -46,6 +71,13 @@
     /** width can't be > 506 px, 16 px to left of right edge and 12 px below image E */
 }
 
+/** Section D Guidelines */
+.wd-body-text{
+    padding-left: 16px;
+    width: 506px;
+    padding-bottom: 12px;
+}
+
 /* Image E Guidelines */
 .wd-image-format{
     width: 504px;
@@ -53,36 +85,50 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     /**12 px to the right of the avatar image */
+    margin-left: 72px;
 }
 
 /** Section F Guidelines */
 .wd-article-title{
     color: white;
     font-size: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .wd-article-words{
     color: lightgray;
     font-size: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .wd-article-padding{
     padding: 12px;
 }
 
-.wd-article-text-borders{
+.wd-article-box{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
-
-.wd-article-box{
     border-width: 1px;
+    border-style: solid;
     border-color: lightgray;
+    border-top-color: black;
+    margin-left: 72px;
+    width: 504px;
 }
 
 /** Section G Guidelines */
 .wd-icon-color{
     color: white;
+}
+
+.wd-stats-container{
+    display: flex;
+    padding-left: 16px;
+    padding-top: 10px;
+    width: 504px;
+    justify-content: space-evenly;
 }
 
 .wd-heart-color{
