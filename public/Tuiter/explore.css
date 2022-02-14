@@ -6,8 +6,8 @@
 }
 
 .wd-border-under{
-    border-bottom-color: rgb(47, 51, 54);
-    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
     border-bottom-width: 10px;
 }
 
@@ -60,9 +60,6 @@
     font-size: 15px;
 }
 
-.wd-border-under{
-    border-bottom: rgb(29,161,242);
-}
 
 .wd-link-color{
     color: rgb(110,118,125);
