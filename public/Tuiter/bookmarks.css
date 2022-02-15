@@ -135,7 +135,15 @@
     color: red;
 }
 
-.wd-spacing-left{
-    margin-left: 12px;
+.flex-stats {
+    width: 50px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+}
+
+.float-right{
+    float: right;
 }
 
