@@ -1,4 +1,5 @@
 /** Generic Guidelines */
+
 .wd-suggested-post{
     background-color: black;
     color: white;
@@ -133,3 +134,8 @@
 .wd-heart-color{
     color: red;
 }
+
+.wd-spacing-left{
+    margin-left: 12px;
+}
+
