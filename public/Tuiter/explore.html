@@ -5,114 +5,163 @@
     <title>Explore Tuiter</title>
     <!--style-->
     <link href="explore.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
 <body class = "wd-color-black">
-    <!--A: Search Tuiter rounded input-->
-    <!-- <i class="fas fa-search"></i> magnifying glass -->
-    <div class = "wd-color-black wd-borders-specific">
-        <input class = "wd-input-bar wd-margin-space"
-               type = "text"
-               placeholder = "Search Tuiter"
-            />
-            <!-- Search button-->
-            <p class = "wd-margin-space pos-float-12pt" type = "button">
-                <a href = "explore-settings.html"><i class="fa fa-cog"></i></a>
-            </p>
+    <!-- Set entire page to a container -->
+    <div class = "container">
 
-        <!-- B: Hyperlinks For You/Trending-->
-        <div class = "wd-margin-space wd-flex-container">
-            <div>
-                <h6 class = "wd-highlight-color">For You</h6>
-            </div>
-            <div>
-                <h6 class = "wd-link-color">Trending</h6>
-            </div>
-            <div>
-                <h6 class = "wd-link-color">COVID-19</h6>
-            </div>
-            <div>
-                <h6 class = "wd-link-color">News</h6>
-            </div>
-            <div>
-                <h6 class = "wd-link-color">Sports</h6>
-            </div>
-            <div>
-                <h6 class = "wd-link-color">Entertainment</h6>
-            </div>
+    <!-- Left Div -->
+    <div class = "wd-boot-left-column">
+        <div class = "list-group">
+            "Twitter Button goes Here"
         </div>
+        <div class = "list-group">
+            "Home goes Here"
+        </div>
+        <div class = "list-group">
+            "Explore goes Here"
+        </div>
+        <div class = "list-group">
+            "Notifications goes Here"
+        </div>
+        <div class = "list-group">
+            "Message Button goes Here"
+        </div>
+        <div class = "list-group">
+            "Bookmarks goes Here"
+        </div>
+        <div class = "list-group">
+            "Lists goes Here"
+        </div>
+        <div class = "list-group">
+            "Profile goes Here"
+        </div>
+        <div class = "list-group">
+            "More goes Here"
+        </div>
+        <div class = "nav nav-pills">
+            <li class = "nav-item">
+                Tweet Pill
+            </li>
+        </div>
+
     </div>
 
-    <!-- C: Suggested Posts -->
-     <div class = "wd-suggested-post">
-         <div class = "wd-margin-left">
-             <p class = "wd-trending-font">Trending in Science</p>
+    <!-- Middle DIV -->
+    <div class = "wd-boot-middle-column">
+        <!--A: Search Tuiter rounded input-->
+        <!-- <i class="fas fa-search"></i> magnifying glass -->
+        <div class = "wd-color-black wd-borders-specific">
+            <input class = "wd-input-bar wd-margin-space"
+                   type = "text"
+                   placeholder = "Search Tuiter"
+                />
+                <!-- Search button-->
+                <p class = "wd-margin-space pos-float-12pt" type = "button">
+                    <a href = "explore-settings.html"><i class="fa fa-cog"></i></a>
+                </p>
 
-             <p>CAR-T Cell Therapy</p>
+            <!-- B: Hyperlinks For You/Trending-->
+            <div class = "wd-margin-space wd-flex-container">
+                <div>
+                    <h6 class = "wd-highlight-color">For You</h6>
+                </div>
+                <div>
+                    <h6 class = "wd-link-color">Trending</h6>
+                </div>
+                <div>
+                    <h6 class = "wd-link-color">COVID-19</h6>
+                </div>
+                <div>
+                    <h6 class = "wd-link-color">News</h6>
+                </div>
+                <div>
+                    <h6 class = "wd-link-color">Sports</h6>
+                </div>
+                <div>
+                    <h6 class = "wd-link-color">Entertainment</h6>
+                </div>
+            </div>
+        </div>
 
-             <p class = "wd-trending-font">55.5k tweets</p>
+        <!-- C: Suggested Posts -->
+         <div class = "wd-suggested-post">
+             <div class = "wd-margin-left">
+                 <p class = "wd-trending-font">Trending in Science</p>
+
+                 <p>CAR-T Cell Therapy</p>
+
+                 <p class = "wd-trending-font">55.5k tweets</p>
+             </div>
+
          </div>
 
-     </div>
+         <div class = "wd-suggested-post">
+             <div class = "wd-margin-left">
+                 <p class = "wd-trending-font">Sports - Trending</p>
 
-     <div class = "wd-suggested-post">
-         <div class = "wd-margin-left">
-             <p class = "wd-trending-font">Sports - Trending</p>
+                 <p>Joe Burrow</p>
 
-             <p>Joe Burrow</p>
-
-             <p class = "wd-trending-font">5,218 Tweets</p>
+                 <p class = "wd-trending-font">5,218 Tweets</p>
+             </div>
          </div>
-     </div>
 
-    <!-- D: Add Author and images to some of the suggested posts -->
-    <div class = "wd-suggested-post wd-flex-container">
-        <div class = "wd-float-left wd-margin-left">
-            <p class = "wd-author-font">The New York Times <span class = "wd-trending-font">- Yesterday</span></p>
-            <p>Rams win the Super Bowl, Kupp named MVP</p>
+        <!-- D: Add Author and images to some of the suggested posts -->
+        <div class = "wd-suggested-post wd-flex-container">
+            <div class = "wd-float-left wd-margin-left">
+                <p class = "wd-author-font">The New York Times <span class = "wd-trending-font">- Yesterday</span></p>
+                <p>Rams win the Super Bowl, Kupp named MVP</p>
+            </div>
+            <div>
+                <img class = "wd-image-format"
+                     src="https://sportshub.cbsistatic.com/i/r/2022/02/14/1d61b7bf-6e9f-44f2-8aca-6122f595cb9b/thumbnail/1200x675/ba97996345771bed2f6a48dfc8fce8ad/kuppmvp.jpg"/>
+
+            </div>
         </div>
-        <div>
-            <img class = "wd-image-format"
-                 src="https://sportshub.cbsistatic.com/i/r/2022/02/14/1d61b7bf-6e9f-44f2-8aca-6122f595cb9b/thumbnail/1200x675/ba97996345771bed2f6a48dfc8fce8ad/kuppmvp.jpg"/>
 
+        <div class = "wd-suggested-post wd-flex-container">
+            <div class = "wd-margin-left">
+                <p class = "wd-trending-font">COVID-19 - LIVE</p>
+
+                <p>COVID-19: News and updates for New Hampshire</p>
+            </div>
+
+            <div>
+                <img class = "wd-image-format"
+                        src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Seal_of_New_Hampshire.svg/200px-Seal_of_New_Hampshire.svg.png"/>
+            </div>
         </div>
 
+        <div class = "wd-suggested-post wd-flex-container">
+            <div class = "wd-margin-left">
+                <p class = "wd-author-font">Bloomberg Opinion <span class = "wd-trending-font">- Yesterday</span></p>
+
+                <p>The Case for Mayo over Ketchup on French Fries</p>
+            </div>
+            <div>
+                <img class = "wd-image-format"
+                src="https://aubreyskitchen.com/wp-content/uploads/2021/01/frozen-french-fries-in-air-fryer.jpg"/>
+            </div>
+        </div>
+
+        <div class = "wd-suggested-post">
+            <div class = "wd-margin-left">
+                <p class = "wd-trending-font">Trending in United States</p>
+
+                <p>Saturday Night Live</p>
+
+                <p class = "wd-trending-font">1,259 Tweets</p>
+            </div>
+        </div>
     </div>
 
-    <div class = "wd-suggested-post wd-flex-container">
-        <div class = "wd-margin-left">
-            <p class = "wd-trending-font">COVID-19 - LIVE</p>
-
-            <p>COVID-19: News and updates for New Hampshire</p>
-        </div>
-
-        <div>
-            <img class = "wd-image-format"
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Seal_of_New_Hampshire.svg/200px-Seal_of_New_Hampshire.svg.png"/>
-        </div>
-
+    <!-- The right Column -->
+    <div class = "wd-boot-right-column">
+        "The recommended follows go here"
     </div>
 
-    <div class = "wd-suggested-post wd-flex-container">
-        <div class = "wd-margin-left">
-            <p class = "wd-author-font">Bloomberg Opinion <span class = "wd-trending-font">- Yesterday</span></p>
-
-            <p>The Case for Mayo over Ketchup on French Fries</p>
-        </div>
-        <div>
-            <img class = "wd-image-format"
-            src="https://aubreyskitchen.com/wp-content/uploads/2021/01/frozen-french-fries-in-air-fryer.jpg"/>
-        </div>
-    </div>
-
-    <div class = "wd-suggested-post">
-        <div class = "wd-margin-left">
-            <p class = "wd-trending-font">Trending in United States</p>
-
-            <p>Saturday Night Live</p>
-
-            <p class = "wd-trending-font">1,259 Tweets</p>
-        </div>
     </div>
 
 </body>

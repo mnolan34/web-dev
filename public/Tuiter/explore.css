@@ -20,6 +20,23 @@
 
 .wd-color-black{ background-color: black;}
 
+
+/** BOOTSTRAPS ADD, Build in 3 Columns */
+.wd-boot-left-column{
+    float: left;
+    width: 25%;
+
+}
+.wd-boot-middle-column{
+    float: left;
+    width: 50%;
+}
+.wd-boot-right-column{
+    float: left;
+    width: 25%;
+
+}
+
 /** all content is offset 16px from left */
 /** all classes prefixed with wd */
 
