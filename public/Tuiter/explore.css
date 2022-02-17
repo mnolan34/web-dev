@@ -29,6 +29,11 @@
     width: 100%;
 }
 
+.wd-banner-font{
+    font-size: 40px;
+    color: white;
+}
+
 .wd-tabs-bottom{
     border-width: 100%;
 }
@@ -134,4 +139,14 @@
     float: left;
     border-radius: 50%;
     width: 48px;
+}
+
+.btn-primary.wd-override-tuit {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.btn-primary.wd-override-follow {
+    border-radius: 20px;
+    float: right;
 }
