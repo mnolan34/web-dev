@@ -5,93 +5,108 @@
     <title>Explore Tuiter</title>
     <!--style-->
     <link href="explore.css" rel="stylesheet"/>
+    <!--Bootstrap link -->
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Fontawesome Link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
-<body class = "wd-color-black">
+<body>
     <!-- Set entire page to a container -->
-    <div class = "container">
+    <div class = "pt-20 container">
 
     <!-- Left Div -->
     <div class = "wd-boot-left-column">
         <div class = "list-group">
-            "Twitter Button goes Here"
+            <div class = "list-group-item">
+                <i class="fab fa-twitter fa-2x"></i><br/>
+            </div>
+            <div class = "list-group-item">
+                <i class="fa fa-home"></i> Home
+            </div>
+            <div class = "list-group-item">
+                <i class="wd-font-black fa fa-hashtag"></i> Explore
+            </div>
+            <div class = "list-group-item">
+                <i class="wd-font-black fa fa-bell"></i> Notifications
+            </div>
+            <div class = "list-group-item">
+                <i class="fa fa-envelope"></i> Message
+            </div>
+            <div class = "list-group-item">
+                <i class="fa fa-bookmark"></i> Bookmarks
+            </div>
+            <div class = "list-group-item">
+                <i class="fa fa-list"></i> List
+            </div>
+            <div class = "list-group-item">
+                <i class="fa fa-user"></i> Profile
+            </div>
+            <div class = "list-group-item">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack"></i>
+                    <i class="fas fa-ellipse fa-stack"></i>
+                </span>
+                More
+            </div>
         </div>
-        <div class = "list-group">
-            "Home goes Here"
+
+        <div class = "wd-tuit-button">
+            <button class = "wd-tuit-button btn btn-primary">
+                Tuit
+            </button>
         </div>
-        <div class = "list-group">
-            "Explore goes Here"
-        </div>
-        <div class = "list-group">
-            "Notifications goes Here"
-        </div>
-        <div class = "list-group">
-            "Message Button goes Here"
-        </div>
-        <div class = "list-group">
-            "Bookmarks goes Here"
-        </div>
-        <div class = "list-group">
-            "Lists goes Here"
-        </div>
-        <div class = "list-group">
-            "Profile goes Here"
-        </div>
-        <div class = "list-group">
-            "More goes Here"
-        </div>
-        <div class = "nav nav-pills">
-            <li class = "nav-item">
-                Tweet Pill
-            </li>
-        </div>
+
 
     </div>
 
     <!-- Middle DIV -->
-    <div class = "wd-boot-middle-column">
+    <div class = "wd-boot-middle-column wd-middle-margins">
         <!--A: Search Tuiter rounded input-->
         <!-- <i class="fas fa-search"></i> magnifying glass -->
-        <div class = "wd-color-black wd-borders-specific">
+        <div>
             <input class = "wd-input-bar wd-margin-space"
                    type = "text"
                    placeholder = "Search Tuiter"
                 />
                 <!-- Search button-->
                 <p class = "wd-margin-space pos-float-12pt" type = "button">
-                    <a href = "explore-settings.html"><i class="fa fa-cog"></i></a>
+                    <a href = "explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
                 </p>
 
             <!-- B: Hyperlinks For You/Trending-->
-            <div class = "wd-margin-space wd-flex-container">
-                <div>
-                    <h6 class = "wd-highlight-color">For You</h6>
-                </div>
-                <div>
-                    <h6 class = "wd-link-color">Trending</h6>
-                </div>
-                <div>
-                    <h6 class = "wd-link-color">COVID-19</h6>
-                </div>
-                <div>
-                    <h6 class = "wd-link-color">News</h6>
-                </div>
-                <div>
-                    <h6 class = "wd-link-color">Sports</h6>
-                </div>
-                <div>
-                    <h6 class = "wd-link-color">Entertainment</h6>
-                </div>
+            <div class = "wd-flex-container">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
 
         <!-- C: Suggested Posts -->
+        <div>
+            <img class = "img-fluid"
+                    src="data:image/jpeg;base64,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"/>
+        </div>
+
          <div class = "wd-suggested-post">
              <div class = "wd-margin-left">
-                 <p class = "wd-trending-font">Trending in Science</p>
+                 <p class = "wd-trending-font">Web Development</p>
 
-                 <p>CAR-T Cell Therapy</p>
+                 <p>ReactJS</p>
 
                  <p class = "wd-trending-font">55.5k tweets</p>
              </div>
@@ -111,12 +126,12 @@
         <!-- D: Add Author and images to some of the suggested posts -->
         <div class = "wd-suggested-post wd-flex-container">
             <div class = "wd-float-left wd-margin-left">
-                <p class = "wd-author-font">The New York Times <span class = "wd-trending-font">- Yesterday</span></p>
+                <p class = "wd-font-black">Web Development <span class = "wd-trending-font">- Yesterday</span></p>
                 <p>Rams win the Super Bowl, Kupp named MVP</p>
             </div>
             <div>
                 <img class = "wd-image-format"
-                     src="https://sportshub.cbsistatic.com/i/r/2022/02/14/1d61b7bf-6e9f-44f2-8aca-6122f595cb9b/thumbnail/1200x675/ba97996345771bed2f6a48dfc8fce8ad/kuppmvp.jpg"/>
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAADRCAMAAAAquaQNAAAAVFBMVEX///9h2vtU2PtT2Pv6/v/2/f9r3Ptl2/vk+P647f3y/P/r+v7R8/6+7v3f9/7X9f7G8P2r6v2R5PyE4fx63/yc5vx/4PzN8v6z7P2M4/yg5/y87f1jaLTfAAARKElEQVR4nOUd6YKrrG7EtVqr1ra2ve//nrfbSAJBE1ROz3fyaxZFAiF7ws/PYmi6Wx69Ib91Q7V8RADVgEZvVh3cb0b3SKkIgFL5cUhXGTttj7k5eHRfd0WlUB7xjMaJHZdvRuMcu1xh5p5wjYkpfSYWXZdsdLLLKXTfEF9Xw0AG6ck9qddmeBNg2UXTQ5/WOTZCqKbm9MH57DOz5E6SM4Y/cJqr+Vk9IO4S6cAdA9/HagZHeX6HPzOLWtG4w8T5xRAa5Yw5rwfOF/7cygsX3yjKNsSOgCOemXpRonLQY9wxR6V5v6JHV8dNMTRgj6amLtemTH6SsmrvJwprlRWMQSuK9yt16driNXpzxRQQ7zfHU0MO53RB6CTDjUCaIUJ39lsq7lvE7QuEc74yVhPQge+q2v5/nVmzV6dpTSm1T7DKapvR1/DT3NOyGBI4LVqd3BMIDBNDNjZVnOjnGziwWPR5AqC/2InG4WSyoQkG1pnPqsypmA/6WbVbiAkXtGRS94nH9iZtqwu9J0lvPphN0cNdPx1IQh3Ahkw/eTVJO6d4dpEbT6kZNgeePHhjIYGz/uCcPlVau2dLlL3xSNzPWYOAe529sZCA/h5DPAzG/lliytQ6JhncBzRRKC8MhFCMGM9R3wvSG97DGG/LGSOsLhxzX5+WmKPaLAX9Oab9UhtI9eB/BtXHPOZbyRZ9KfTj/E7MNyrMtFX2y7JT4x851+Y4je/08w8vhvEQCVQew/D4YFZhJq1u7PG00hdA0wQUJfDe7Qz+9ETZMLGZFP2CRnqyloAWJrFExztg9FQBOOAbJKI1GReQEHdrg1Yxucf4DaVxZnfG2Za5ZDM9jug9H9D6h9Qix3wZ/yJlQMfx1e11kJFVy221u2VP/Q41pZ6ToFnX9sx6FAyzKqYNhNHvSZmt59nyAS2cPAItLeXIiuVLB5j15uIp0XLBR8Fr7F32WTnI6Lf2Cmi5EHsFvA4myn4GX6nF09YYp3qP/WI/hjXMVixXngYfwOL6fSo1MPYcRetBW8dWK817vOaamMGMzIsqAcZbq5kAY6+pniITvMRLGv0BjL2o2vQCRR761hMCUnW5iGWcyTwHD0URcK6tMU6X7PF6OpeeRrw1r04WsIzBpVe7/fwuqMLJY+0sFqsOyCBWHfpNqr8BRUb4phy0ZSrUDku0q7Xh8BPSpvZLbB+W0LaTkBShXHpZmmiXhTIqpO2k7WMZv4HOvQ93hpxbGPHfBbSPtfdBZMbDENQogaF0lnme7+N72+dGaFqUfAulUeijB1VOUZLDuO4Boua1zwnCyV9aZ0DcTOKI1dyESFFYGTSXFES54F4iSYQkloDt6kls772tPDRaxLUwix+8uBewWbf30Gurha2CQMlrnTsoo9hhCaCABMhJ1a49pkeuoNi0Bh254y9iG1AB+fm5jPPjiacEOj2oCSIfAU9L1sLpIpi5L3RCZo32kDp1iJHzFArNqkOkdLUyJR5aiA4baYDnnHWU9eMevm4xgKwIBp9Eh9h1DGB4hmNGgYhuiKyIHy0ZGLYEPKTuM3cBT+XzR1mLtFgycW/Q9uL8IUJunqIqDoem2Q9D29YPaNth2O+bQ1HB6DJDKndBWTW0JeYYZYLjTMoN8LG4nlNtNEmEybEGCWQkASZlMezut1OuYn5GPFqZOI6y/ti1TUXqFzoTNoBW/YRCe9UMhaHc7+79A1NXMr0QcfVYsqw/7/YGh9QaV5B0rh+oxo+iJG1295OzbGAx5lF2vO5HWt/J5OMKoHWKZz5Sue9uebwJribe/bsO9Db+MUQ21xNANlV9y7bZWBfacd5ffTLKlgHIlg2HLEBb/xSqNiSZmE5YCFM1ULa3+akEgr7e3CFQXcmCpmkAikaWZafT6XLp+1vfX06nx+955NBEeENn3YYSqugyL53iWg9PVXLCW5Gk5UMD3ddXj9EfzKzbpHjgsbssdN96A/yDxKBr4SdOUczbdhVn3drkXTOI+UmV2Us3REYxP4f4CYBHPFTI9NB2x4xD7kqdVtQ4i9kS6Ceufdf+nqgS2rsyfprAVz9aVlIM3S2L5idxX+dID1aplvGhODv+r0HmDtgocUIeNLeQSpUW9XmOj7gK4QQw2cHgBfne4kh716RZAPxitsshOcwUPqt8UfpxyqhwJ/z0wHnpkaUBj4TtDymnCe75SSWv5P9A4u7YABbCNlHvU/9kAGB7tmcMGOfO3VCRH861A9/Hh44DyLwzHSEF2AW/cDaIrVsGsP5fnuzPLqxVJF/qxi4hfqObvcW9TqU3k23AfD2DQtCBbayZzvF5J88fuoxGeqK4lYTyRh6XOLv+4gBCjHg5Idn5GnOd81zo0Ue7qbpm9GRvAh5C5l0pdYbKnH4EbQO0q/wdjZAhoyOpCQjGcg9nugUQl22XZAeDkyFYQYUqpF3Itvy7GTUO5gXo3Uj0a+lJs7a5tV+ltBlQZAUyOCDbWuJZ1R5ilCkHaiat5SQ1Q45Sf7YOhaMNk34AUC8ILixK9YZCGQgDQO3ES+nVFi/xXNJnabFolTkYvY5o6qgv0LYWll7BXgXjdoJAuSOEZXepmOnzVFkF7pmTLEBx/fh5sAdTbCsthrZuh2JqLtRQepFNT7mG1sJ5qjDBLNtQkxsFGih8/lJTG2NC0Z1Gl8fJ7cBoALn8rroefmo9d+Z5dmceNMYRnik1A2zkrfFDyeSyilusMSg3EUFv2vsvA8ksCTCL51zLb+ywOs1Ym0BUvC0kqDjQYoHS5FzaEbAZPqpMPzf8CIUhq+hdNqpj43nNVDPml0hOrSmaYMuB96dofgp26qXJghWez/4wCp6pyHqKnzgxVGItuV8YnsH7lO1iy4HxdbIWFx6S55p05imaBLMTlM0lUZEKs3QBjIm2gDQSp7u2UQsMzcYCNT5hzQ4XZVhkgZKdua4a1AsFcBqKk6IUTAKoXQaysoe6ILOUBOWsmwftgP7JVYiBTnkCP5Pvz7Wpo1YJKDRxpYmQHTVGdaHGW85U0WkARwGMQPGVo+sMj1+l1HD++DS4E12h9SBJGCKsDlofMpv3UCgTgcIDxdwl5QoouQqeVeiLE9l41NSpzTK1Vwqo2ukj9aBkgpCwwQfaGTbrho7QKAi2S9KC9SLBL4k+pELPCvTJ6A+A4yKLmVDOVIqR8rprUszL3mRpoSKQISMDAPWmYqPWiiVTEyKPow0UA6isV4V7AkoctXMBuMvERq3ZGIC0Pu4RD6h3z8YzbqPMBcDi+T2yYJ/knm2DYEkdn9syliJr8yTL3YVAW/2lj+lFnoEazYjc4pRH1I46U7zJPlEOMII5IS/vI54QtcVWfwgXkEZdid/2mCFovvReUpAw7VO9jBqkkkTCkk2v10ndAm6yV881UCX+1q4WVraiGDfJ6ms2xiTJpvADXiE0/fqbiJplGEPGR0sOR2k5gTEtKmY/MAf6A+9ju3CP0633uJz9wBzo1997/EXnmLTL0Tn2Cd5Z57hck1dTe7Aqr/Y4yI3Jq7eXx2yMGfLYI9QBVL7PX0CuyT+icy3Rq01Tn9areZtMvmsaT/IMYy0qRs4IbSfpJvfGhJbYTtQxtm0nab4UZTvBGKhQ4NkT+ivsY1j2vI0PhCWRSR+IvaKr+ED+PT/XX+bLFKR6On2ZK/irwY+b+Kvhj14IG2yiWByTqP6ymIQRd2KyLxR3Akdug7jTce2409fHFqulsUX7KKwQPwZfkMaPKYUaaIfKiB8zeNd8/NjKEZhXOMPlCLxUwbVzBL4uDwSywrd3C+SBzFAgLw9EnOtjUZlPrk/MyfX5qA7GKXKDlevjtD6sfK5ok3yubMznmihIC5LP5Z2zN57DbXL2RjYL0thXytmj7sl04kylDK6Xl3mlyIVKjMRg4zt//+Z6ubdLmpVC5xYwiD1ybxmOrNZ8KSLzq0HZgCO/2s+3/AZYI7YkvzpiZVCQ1zz+nTn0rJuEnkAa8EqdIQoOdWDjOgmg9IC/No46CYF3Iz3S5SX5KE2ctTAwp8T3KiLAtgyFkqiFKbqcnuxRFr8Q1DsZlLNpvVNpiMTV6p2eMFHTdt6DxmqmUfIVNW25X9+unV/d4nnqnwyoHWzrBf9T1CSM2U2qitPgxlnvgsUO0ZWby2pTbauTUZu6AN8n2EqMAVljMQjYA1MulGH9sUWbaTNXf+xWi9nQ9NOF3c/mAUaNOZi0uP04bLqHwg9lUx9nasxV3PvrABAqVh+BWzcUHyKcJsxJcPUR6Of7Bz00wxUbRrTMXhH5sav/VK+ItdsqVsz2J/+VfiAvODy0G27wG8KuHvbTPV+eN4IXh3278xh9+0Y36/X16fvL5fFbBh/4LnTfUNVWzPiPQYDeTS9IfEh7Ewh1q/e/14MN9Nnb9QGaCgJk/1CfPdyStGq7fqO+kRhZpS53o5diiO7VP+g6vlFnL/fX84b9MtWzX+bIpEDyThiMQUtSw2tcPXuiZly9gYHpQ5e5TPVEDXRz+3zf26btzk/M/yt9b/m9jUvjAlxeb2O1q2akjmYkYe6ql7BKlP5xKJr9/tW9+tW++tXBum2HfVN8d/9q0W3L6KIBd7Yd1OIYPco9b532BcA3pH3oXTSBUrRlfehDsC7AuDiPo7sGaKKAXeqkdw2EYF3S2yu2uE9CeovHMhi/xtTxUF9g4s7Q5OvvDBHfC3OY3sNl98JsfuGz190/MO/G8rnDnA1u5lzYu3+W3u9k9KFAObDfeb/T8ju8IGkgiv/SO7z+vXva/r27+Fa4b3EUKfACnO+9b1GL4wV3ah5df+JCyDs117k39UkfKJfwi+9NXedu3AeB7BzcjAUh78bVk5aaLbhbEtrhb77/eJM7rqUHJOgd14suEL/SKH/3PeZAv/tH7qqvFmGMbjz+HcdHvqQe2r0ngFx+rwN0sjD2Ei/agpOzEyEAjL0OUGLm6hA+AgYExHjZOX5AitP0c89RwlE16LvgN9dDhMEvwp8unQYftLfab3HN7laeWdia1Db3WIPAos/uEFW5XjY96GGyuY9eO/Y8NqemsirZ3i0AmlS2d+1p20meMUbU4L9Gklv1IW2n3n+epMb1GkqsdXUB7WOdPC/1PuCCE/yLdN7aE7N9PHXnSU8lVj2U0cKK7OfsBn22liVTcwDctizhkoYYfjB6o/o3kpjboojuUgCRTAGzNpn0UzU0is4ZBc8jgOs7AiTt6X3isy6jU8SndtKoCxU497qAwglGxrgHucKVB2o0HlLzH9wN0xZYiNtxr1KKMiga8WXDXmZGGMDJ8i0ik4CuZ2J9Lr0ZSGFxYsho1XMMA73oYS65Budx/uEhwhCbq3Q1FU+Glw+cfy8MpACuwJkjwtLYYEqYWD3N+jnRDDJRQiRF4Ajo9JNWo0yywL2wSvlnTgt4MkyWImyZMLXGe7M4TPW0zpKY/j6VTekV4OgHSWD7wXcvuRsrWJePWkdYQ2c9e3KqN+Ca0UBpmUZhIr0bDVGnPqWiNdbTritQ0bFfARkewNgCoRwm9k1as2IntZdI5Tv7HZRFE0IYfwDyGnVBMjEZbkSSMcPEIfoBq7hvEdIFWpcQGuYv4H448aUu0uRZpTVcL1QyOasTlNVt6f2qunT7Z/Zxkhb1BX92napMJpiq0gtPV4kW2yrakcXFn1HNwX3CVUuA29iVo1FoKIm4lAtCSaZxblx8c5nJvp+7YXqErWMRFhD3lxD4ejhlrrxy1DDlewisPk8Evl7JVgnjZu3pfkxbQUJ1wwH4Rp1vSCh13679HvoSqmDRBJq3viDO6iWzmrwxXuIRWxvKI91QJzovN2qaI7nRSh2D8ywE1d3oRKLi6LiSRzUZjhHW3x6f2qZ8XgaH6+2XieV9167rhynarh9Hv11XsIf/D1D/t9SoJVHTAAAAAElFTkSuQmCC"/>
 
             </div>
         </div>
@@ -134,34 +149,65 @@
             </div>
         </div>
 
-        <div class = "wd-suggested-post wd-flex-container">
+        <div class = "wd-suggested-post">
             <div class = "wd-margin-left">
-                <p class = "wd-author-font">Bloomberg Opinion <span class = "wd-trending-font">- Yesterday</span></p>
+                <p class = "wd-trending-font">Web Development</p>
 
-                <p>The Case for Mayo over Ketchup on French Fries</p>
-            </div>
-            <div>
-                <img class = "wd-image-format"
-                src="https://aubreyskitchen.com/wp-content/uploads/2021/01/frozen-french-fries-in-air-fryer.jpg"/>
+                <p>jQuery</p>
+
+                <p class = "wd-trending-font">123k Tuits</p>
             </div>
         </div>
 
         <div class = "wd-suggested-post">
             <div class = "wd-margin-left">
-                <p class = "wd-trending-font">Trending in United States</p>
+                <p class = "wd-trending-font">Web Development</p>
 
-                <p>Saturday Night Live</p>
+                <p>NodeJS</p>
 
-                <p class = "wd-trending-font">1,259 Tweets</p>
+                <p class = "wd-trending-font">123k Tuits</p>
             </div>
         </div>
     </div>
 
     <!-- The right Column -->
-    <div class = "wd-boot-right-column">
-        "The recommended follows go here"
-    </div>
-
+        <div class = "wd-suggested-post">
+            <div class = "list-group">
+                <div class = "list-group-item">
+                    Who to Follow
+                </div>
+                <div class = "list-group-item">
+                    <img class = "wd-avatar-photo"
+                         src = "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1"/>
+                    Java
+                    @Java
+                </div>
+                <div class = "list-group-item">
+                    <img class = "wd-avatar-photo"
+                         src = "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
+                    Relativity Space
+                    @relativityspace
+                </div>
+                <div class = "list-group-item">
+                    <img class = "wd-avatar-photo"
+                         src = "https://cdn.worldvectorlogo.com/logos/virgin-1.svg"/>
+                    Virgin Galatic
+                    @virgingalatic
+                </div>
+                <div class = "list-group-item">
+                    <img class = "wd-avatar-photo"
+                         src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"/>
+                    NASA
+                    @NASA
+                </div>
+                <div class = "list-group-item">
+                    <img class = "wd-avatar-photo"
+                         src = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"/>
+                    Tesla
+                    @Tesla
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
