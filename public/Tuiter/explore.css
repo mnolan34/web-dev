@@ -1,5 +1,10 @@
 /** Things mentioned in Preamble for Explore */
 
+/** Piazza mentioned override */
+.nav{
+    width: 100%;
+}
+
 .wd-borders-specific{
     border-color: rgb(47, 51, 54);
     border-style: solid
