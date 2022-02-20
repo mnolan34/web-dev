@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.nav-link.wd-text-override{
+    color: lightgray;
+}
+
 .wd-borders-specific{
     border-color: rgb(47, 51, 54);
     border-style: solid
@@ -34,6 +38,10 @@
     color: black;
 }
 
+.wd-font-gray{
+    color: gray;
+}
+
 .wd-banner-image{
     width: 100%;
 }
@@ -50,28 +58,40 @@
     width: 25%;
 }
 .wd-boot-middle-column{
-    float: left;
-    width: 50%;
+    border-top-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-color: rgb(47, 51, 54);
+    border-width: 2px;
 }
+
+.wd-border-photo{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+}
+
 .wd-boot-right-column{
     float: left;
     width: 25%;
 }
 
 /** Input Bar Section */
-.input-group-text{
-    background-color: white;
+.input-group-text.wd-override-blend{
+    background-color: gray;
     height: 30px;
-    color: gray;
-    border-color: lightgray;
+    color: lightgray;
+    border-color: gray;
     border-radius: 10px;
 }
 
 .wd-input-bar{
-    background-color: white;
+    background-color: gray;
+    color: lightgray;
     width: 85%;
     height: 30px;
-    border-color: lightgray;
+    border-style: none;
     border-radius: 10px;
 }
 
@@ -115,7 +135,7 @@
     border-color: rgb(47, 51, 54);
     Suggested color black, not light gray like shown
      */
-    border-style: solid;
+    border-style: none;
 }
 
 .wd-trending-font{
@@ -153,6 +173,9 @@
 }
 
 .btn-primary.wd-override-follow {
+    color: black;
+    background-color: white;
+    border-color: white;
     border-radius: 20px;
     float: right;
 }
@@ -164,5 +187,10 @@
 
 .list-group-item.wd-override-inverse{
     background-color: black;
+    border-style: none;
+}
+
+.list-group-item.wd-override-gray{
+    background-color: rgb(47, 51, 54);
     border-style: none;
 }

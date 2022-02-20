@@ -67,46 +67,45 @@
     </div>
 
     <!-- Middle DIV -->
-    <div class = "col-xxl-6 col-xl-6 col-lg-6 col-md-9 col-sm-9 mt-3 pe-2 ps-2 mb-3">
+    <div class = "wd-boot-middle-column col-xxl-6 col-xl-6 col-lg-6 col-md-9 col-sm-9 mt-3 pe-2 ps-2 mb-3">
         <!--A: Search Tuiter rounded input-->
-        <!-- <i class="fas fa-search"></i> magnifying glass -->
-        <div class = "mb-3">
+        <div class = "mb-0">
             <div class = "input-group">
-                <span class = "input-group-text"> <i class="fas fa-search"></i></span>
+                <span class = "input-group-text wd-override-blend"> <i class="fas fa-search"></i></span>
                 <input class = "wd-input-bar mb-2"
                        type = "text"
                        placeholder = "Search Tuiter"
                     />
                     <!-- Search button-->
                     <p class = "float-end ms-2 me-2" type = "button">
-                        <a href = "explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
+                        <a href = "explore-settings.html"><i class="fa fa-cog fa-2x fa-inverse"></i></a>
                     </p>
             </div>
             <!-- B: Hyperlinks For You/Trending-->
             <div class = "wd-banner-image mt-1">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">For You</a>
+                        <a class="nav-link wd-text-override" href="#">For You</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trending</a>
+                        <a class="nav-link wd-text-override" href="#">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link wd-text-override" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sports</a>
+                        <a class="nav-link wd-text-override" href="#">Sports</a>
                     </li>
                     <li class="d-none d-md-block d-lg-block d-xl-block d-xxl-block nav-item">
-                        <a class="nav-link" href="#">Entertainment</a>
+                        <a class="nav-link wd-text-override" href="#">Entertainment</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- C: Suggested Posts -->
-        <div class = "position-relative">
-            <img class = "wd-banner-image img-fluid"
+        <div class = "wd-banner-image position-relative">
+            <img class = "wd-banner-image wd-border-photo img-fluid"
                     src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"/>
             <div class = "ms-1 wd-banner-font position-absolute bottom-0 start-20">
                 SpaceX's Starship
@@ -114,7 +113,7 @@
         </div>
 
         <!-- D: Add Author and images to some of the suggested posts -->
-        <div class = "wd-suggested-post wd-flex-container">
+        <div class = "wd-suggested-post mb-2 wd-flex-container">
             <div class = "mt-1 ms-1">
                 <div class = "wd-trending-font">Web Development</div>
 
@@ -132,7 +131,7 @@
             </div>
         </div>
 
-         <div class = "wd-suggested-post wd-flex-container">
+         <div class = "wd-suggested-post mb-2 wd-flex-container">
              <div class = "mt-1 ms-1">
                  <div class = "wd-trending-font">Web Development</div>
 
@@ -154,7 +153,7 @@
          </div>
 
 
-        <div class = "wd-suggested-post wd-flex-container">
+        <div class = "mb-2 wd-suggested-post wd-flex-container">
             <div class = "mt-1 ms-1">
                 <div class = "wd-trending-font">Web Development</div>
 
@@ -168,7 +167,7 @@
             </div>
         </div>
 
-        <div class = "wd-suggested-post wd-flex-container">
+        <div class = "mb-2 wd-suggested-post wd-flex-container">
             <div class = "mt-1 ms-1">
                 <div class = "wd-trending-font">Web Development</div>
 
@@ -186,61 +185,61 @@
     <!-- The right Column -->
         <div class = "d-none d-lg-block d-xl-block d-xxl-block mt-3 col-3">
             <div class = "list-group">
-                <div class = "list-group-item">
-                    Who to Follow
+                <div class = "list-group-item wd-override-gray">
+                   <div class = "wd-font-white ms-1">Who to Follow </div>
                 </div>
-                <div class = "list-group-item">
+                <div class = "list-group-item wd-override-gray">
                     <img class = "wd-avatar-photo"
                          src = "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1"/>
                     <div class = "wd-float-left">
-                        <div class = "ms-1">Java <i class="fa fa-check-circle"></i></div>
-                        <div class = "ms-1">@Java</div>
+                        <div class = "wd-font-white ms-1">Java <i class="fa fa-check-circle"></i></div>
+                        <div class = "wd-font-gray ms-1">@Java</div>
                     </div>
                         <button class = "btn btn-primary wd-override-follow">
                             Follow
                         </button>
                 </div>
-                <div class = "list-group-item">
+                <div class = "list-group-item wd-override-gray">
                     <img class = "wd-avatar-photo"
                          src = "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
                     <div class = "wd-float-left">
-                        <div class = "ms-1">Relativity Space <i class="fa fa-check-circle"></i></div>
-                        <div class = "ms-1">@relativityspace</div>
+                        <div class = "wd-font-white ms-1">Relativity Space <i class="fa fa-check-circle"></i></div>
+                        <div class = "wd-font-gray ms-1">@relativityspace</div>
                     </div>
                         <button class = "btn btn-primary wd-override-follow">
                             Follow
                         </button>
                 </div>
-                <div class = "list-group-item">
+                <div class = "list-group-item wd-override-gray">
                     <img class = "wd-avatar-photo"
                          src = "https://cdn.worldvectorlogo.com/logos/virgin-1.svg"/>
                     <div class = "wd-float-left">
-                        <div class = "ms-1">Virgin Galactic <i class="fa fa-check-circle"></i></div>
-                        <div class = "ms-1">@virgingalactic</div>
+                        <div class = "wd-font-white ms-1">Virgin Galactic <i class="fa fa-check-circle"></i></div>
+                        <div class = "wd-font-gray ms-1">@virgingalactic</div>
                     </div>
                         <button class = "btn btn-primary wd-override-follow">
                             Follow
                         </button>
 
                 </div>
-                <div class = "list-group-item">
+                <div class = "list-group-item wd-override-gray">
                     <img class = "wd-avatar-photo"
                          src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"/>
                     <div class = "wd-float-left">
-                        <div class = "ms-1">NASA <i class="fa fa-check-circle"></i></div>
-                        <div class = "ms-1">@NASA</div>
+                        <div class = "wd-font-white ms-1">NASA <i class="fa fa-check-circle"></i></div>
+                        <div class = "wd-font-gray ms-1">@NASA</div>
                     </div>
                         <button class = "btn btn-primary wd-override-follow">
                             Follow
                         </button>
 
                 </div>
-                <div class = "list-group-item">
+                <div class = "list-group-item wd-override-gray">
                     <img class = "wd-avatar-photo"
                          src = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"/>
                     <div class = "wd-float-left">
-                        <div class = "ms-1">Tesla <i class="fa fa-check-circle"></i></div>
-                        <div class = "ms-1">@Tesla</div>
+                        <div class = "wd-font-white ms-1">Tesla <i class="fa fa-check-circle"></i></div>
+                        <div class = "wd-font-gray ms-1">@Tesla</div>
                     </div>
                         <button class = "btn btn-primary wd-override-follow">
                             Follow
