@@ -9,6 +9,16 @@
     color: lightgray;
 }
 
+.nav-link.wd-inUseOverride{
+    color: white;
+}
+
+.nav-item.wd-inUseBorder{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(29,161,242);
+}
+
 .wd-borders-specific{
     border-color: rgb(47, 51, 54);
     border-style: solid
@@ -96,6 +106,10 @@
 }
 
 /** Bookmarks Section */
+
+::placeholder{
+    color: lightgray;
+}
 
 /** Challenge advice, justify content */
 .wd-flex-container{
