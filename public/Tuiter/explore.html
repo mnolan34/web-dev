@@ -10,52 +10,52 @@
     <!-- Fontawesome Link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
-<body>
+<body class = "wd-color-black">
     <!-- Set entire page to a container -->
     <div class = "row p-3">
 
     <!-- Left Div -->
     <div class = "col-3 mt-3 ps-2 pe-2">
-        <div class = "list-group mb-2">
-            <div class = "list-group-item">
-                <i class="fab fa-twitter fa-2x"></i><br/>
+        <div class = "list-group wd-override-group mb-2">
+            <div class = "list-group-item wd-override-inverse">
+                <i class="fab fa-twitter fa-inverse fa-2x"></i><br/>
             </div>
-            <div class = "list-group-item flex-row">
-                    <i class="fa fa-home"></i>
-                <div class = "d-none d-xl-block d-xxl-block p-2">
+            <div class = "list-group-item wd-override-inverse flex-row">
+                    <i class="fa fa-home fa-inverse"></i>
+                <div class = "wd-font-white d-none d-xl-block d-xxl-block p-2">
                     Home
                 </div>
             </div>
             <div class = "list-group-item-action active list-group-item">
-                <i class="fa fa-hashtag"></i>
-                <span class = "d-none d-xl-block d-xxl-block">Explore</span>
+                <i class="fa fa-hashtag fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">Explore</span>
             </div>
-            <div class = "list-group-item">
-                <i class="wd-font-black fa fa-bell"></i>
-                <span class = "d-none d-xl-block d-xxl-block">Notifications</span>
+            <div class = "list-group-item wd-override-inverse">
+                <i class="wd-font-black fa fa-bell fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">Notifications</span>
             </div>
-            <div class = "list-group-item">
-                <i class="fa fa-envelope"></i>
-                <span class = "d-none d-xl-block d-xxl-block">Message</span>
+            <div class = "list-group-item wd-override-inverse">
+                <i class="fa fa-envelope fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">Message</span>
             </div>
-            <div class = "list-group-item">
-                <i class="fa fa-bookmark"></i>
-                <span class = "d-none d-xl-block d-xxl-block">Bookmarks</span>
+            <div class = "list-group-item wd-override-inverse">
+                <i class="fa fa-bookmark fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">Bookmarks</span>
             </div>
-            <div class = "list-group-item">
-                <i class="fa fa-list"></i>
-                <span class = "d-none d-xl-block d-xxl-block">List</span>
+            <div class = "list-group-item wd-override-inverse">
+                <i class="fa fa-list fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">List</span>
             </div>
-            <div class = "list-group-item">
-                <i class="fa fa-user"></i>
-                <span class = "d-none d-xl-block d-xxl-block">Profile</span>
+            <div class = "list-group-item wd-override-inverse">
+                <i class="fa fa-user fa-inverse"></i>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">Profile</span>
             </div>
-            <div class = "list-group-item">
-                <span class="fa-stack fa-1x">
+            <div class = "list-group-item wd-override-inverse">
+                <span class="wd-no-left-pad fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-1x"></i>
                     <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                 </span>
-                <span class = "d-none d-xl-block d-xxl-block">More</span>
+                <span class = "wd-font-white d-none d-xl-block d-xxl-block">More</span>
             </div>
         </div>
 
@@ -71,15 +71,17 @@
         <!--A: Search Tuiter rounded input-->
         <!-- <i class="fas fa-search"></i> magnifying glass -->
         <div class = "mb-3">
-            <input class = "wd-input-bar mb-2"
-                   type = "text"
-                   placeholder = "Search Tuiter"
-                />
-                <!-- Search button-->
-                <p class = "float-end me-2" type = "button">
-                    <a href = "explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
-                </p>
-
+            <div class = "input-group">
+                <span class = "input-group-text"> <i class="fas fa-search"></i></span>
+                <input class = "wd-input-bar mb-2"
+                       type = "text"
+                       placeholder = "Search Tuiter"
+                    />
+                    <!-- Search button-->
+                    <p class = "float-end ms-2 me-2" type = "button">
+                        <a href = "explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
+                    </p>
+            </div>
             <!-- B: Hyperlinks For You/Trending-->
             <div class = "wd-banner-image mt-1">
                 <ul class="nav nav-tabs">
@@ -114,14 +116,14 @@
         <!-- D: Add Author and images to some of the suggested posts -->
         <div class = "wd-suggested-post wd-flex-container">
             <div class = "mt-1 ms-1">
-                <p class = "wd-trending-font">Web Development</p>
+                <div class = "wd-trending-font">Web Development</div>
 
-                <p>ReactJS <i class="fa fa-check-circle"></i> <span class = "wd-trending-font">- 2h</span></p>
+                <div>ReactJS <i class="fa fa-check-circle"></i> <span class = "wd-trending-font">- 2h</span></div>
 
-                <p>
+                <div>
                     React.js is a component based front end library
                     that makes it very easy to build Single Page Applications or SPAs
-                </p>
+                </div>
             </div>
             <div>
                 <img class = "mt-1 mb-1 me-1 wd-image-format"
@@ -132,18 +134,18 @@
 
          <div class = "wd-suggested-post wd-flex-container">
              <div class = "mt-1 ms-1">
-                 <p class = "wd-trending-font">Web Development</p>
+                 <div class = "wd-trending-font">Web Development</div>
 
-                 <p>JavaScript<i class="fa fa-check-circle"></i> <span class = "wd-trending-font">- 2h</span></p>
+                 <div>JavaScript<i class="fa fa-check-circle"></i> <span class = "wd-trending-font">- 2h</span></div>
 
-                 <p>
+                 <div>
                      JavaScript is programming language that can run on browsers
                      as well as desktops
-                 </p>
+                 </div>
 
-                 <p class = "wd-trending-font">
+                 <div class = "wd-trending-font">
                      123k Tuits
-                 </p>
+                 </div>
              </div>
              <div>
                  <img class = "mt-1 mb-1 me-1 wd-image-format"
@@ -154,11 +156,11 @@
 
         <div class = "wd-suggested-post wd-flex-container">
             <div class = "mt-1 ms-1">
-                <p class = "wd-trending-font">Web Development</p>
+                <div class = "wd-trending-font">Web Development</div>
 
-                <p>jQuery</p>
+                <div>jQuery</div>
 
-                <p class = "wd-trending-font">123k Tuits</p>
+                <div class = "wd-trending-font">123k Tuits</div>
             </div>
             <div>
                 <img class = "mt-1 mb-1 me-1 wd-image-format"
@@ -168,11 +170,11 @@
 
         <div class = "wd-suggested-post wd-flex-container">
             <div class = "mt-1 ms-1">
-                <p class = "wd-trending-font">Web Development</p>
+                <div class = "wd-trending-font">Web Development</div>
 
-                <p>NodeJS <i class="fa fa-check-circle"></i><span class = "wd-trending-font">- 2h</span> </p>
+                <div>NodeJS <i class="fa fa-check-circle"></i><span class = "wd-trending-font"> - 2h</span> </div>
 
-                <p class = "wd-trending-font">123k Tuits</p>
+                <div class = "wd-trending-font">123k Tuits</div>
             </div>
             <div>
                 <img class = "wd-image-format mt-1 mb-1 me-1"

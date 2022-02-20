@@ -10,6 +10,10 @@
     border-style: solid
 }
 
+.wd-no-left-pad{
+    padding-left: 0;
+}
+
 .wd-tuit-button{
     width: 100%;
     border-radius: 10px;
@@ -39,8 +43,6 @@
     color: white;
 }
 
-
-
 /** BOOTSTRAPS ADD, Build in 3 Columns */
 /** could replace this with col-number */
 .wd-boot-left-column{
@@ -57,11 +59,18 @@
 }
 
 /** Input Bar Section */
+.input-group-text{
+    background-color: white;
+    height: 30px;
+    color: gray;
+    border-color: lightgray;
+    border-radius: 10px;
+}
+
 .wd-input-bar{
     background-color: white;
     width: 85%;
     height: 30px;
-    color: gray;
     border-color: lightgray;
     border-radius: 10px;
 }
@@ -100,7 +109,7 @@
 }
 
 .wd-suggested-post{
-    color: black;
+    color: white;
     border-color: lightgray;
     /*
     border-color: rgb(47, 51, 54);
@@ -146,4 +155,14 @@
 .btn-primary.wd-override-follow {
     border-radius: 20px;
     float: right;
+}
+
+.list-group.wd-override-group{
+    background-color: black;
+    border-style: none;
+}
+
+.list-group-item.wd-override-inverse{
+    background-color: black;
+    border-style: none;
 }
