@@ -61,7 +61,7 @@
     border-top-style: none;
     border-left-style: solid;
     border-right-style: solid;
-    border-bottom-style: none;
+    border-bottom-style: solid;
     border-color: rgb(47, 51, 54);
     border-width: 2px;
 }
