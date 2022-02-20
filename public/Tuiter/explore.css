@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+.wd-debug-border{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
 .nav-link.wd-text-override{
     color: lightgray;
 }
@@ -65,7 +71,11 @@
 /** could replace this with col-number */
 .wd-boot-left-column{
     float: left;
-    width: 25%;
+    width: 10%;
+}
+.wd-big-left{
+    float: left;
+    width: 50%;
 }
 .wd-boot-middle-column{
     border-top-style: none;
