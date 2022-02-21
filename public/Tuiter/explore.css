@@ -121,6 +121,11 @@
     color: lightgray;
 }
 
+.wd-alignment{
+    padding-left: 0;
+}
+
+
 /** Challenge advice, justify content */
 .wd-flex-container{
     display: flex;
