@@ -30,8 +30,9 @@
     border-style: solid
 }
 
-.wd-no-left-pad{
+.span.wd-override-no-pad{
     padding-left: 0;
+    margin-left: 0;
 }
 
 .wd-tuit-button{
@@ -218,6 +219,15 @@
     background-color: black;
     border-style: none;
 }
+
+.list-group-item.wd-override-special{
+    background-color: black;
+    border-style: none;
+    padding-left: 4px;
+    margin-left: 0;
+    padding-right: 10px;
+}
+
 
 .list-group-item.wd-override-gray{
     background-color: rgb(47, 51, 54);
