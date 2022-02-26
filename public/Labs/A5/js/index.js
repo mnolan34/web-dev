@@ -98,3 +98,93 @@ const twoSquared = square(2);
 const threePlusOne = plusOne(3);
 console.log(twoSquared);
 console.log(threePlusOne);
+
+//Arrays
+console.log("Arrays");
+let numberArray1 = [1, 2, 3, 4, 5];
+console.log(numberArray1);
+let stringArray1 = ['string1', 'string2'];
+console.log(stringArray1);
+let variableArray1 = [
+    functionScoped,
+    blockScoped,
+    constant1,
+    numberArray1,
+    stringArray1
+];
+console.log(variableArray1);
+variableArray1.forEach(function(each){
+    console.log(each);
+});
+
+
+//Array Indices
+console.log("Array index and length");
+const length1 = numberArray1.length;
+console.log(length1);
+const index1 = numberArray1.indexOf(3);
+console.log(index1);
+
+//Changing the Array
+console.log("Add and remove data to arrays");
+// adding new items
+numberArray1.push(6);
+stringArray1.push('string3');
+
+// remove 1 item starting on 3rd spot
+numberArray1.splice(2, 1);
+stringArray1.splice(1, 1);
+console.log(numberArray1);
+console.log(stringArray1);
+
+//Console Loop
+console.log("For loops");
+for (let i=0; i<stringArray1.length; i++) {
+    const string1 = stringArray1[i];
+    console.log(string1);
+}
+
+//map function
+console.log("Map function");
+console.log(numberArray1);
+const squares = numberArray1.map(square);
+console.log(squares);
+const cubes = numberArray1.map(a => a * a * a);
+console.log(cubes);
+
+//Find Function
+console.log("Find function");
+const four = numberArray1.find(a => a === 4);
+console.log(four);
+const string3 = stringArray1.find(a => a === 'string3');
+console.log(string3);
+
+//find Index function
+console.log("Find index function");
+const fourIndex = numberArray1
+    .findIndex(a => a === 4);
+console.log(fourIndex);
+const string3Index = stringArray1
+    .findIndex(a => a === 'string3')
+console.log(string3Index);
+
+//filter function
+console.log("Filter function");
+console.log(numberArray1);
+const numbersGreaterThan2 = numberArray1
+    .filter(a => a > 2);
+console.log(numbersGreaterThan2);
+const evenNumbers = numberArray1
+    .filter(a => a % 2 === 0);
+console.log(evenNumbers);
+const oddNumbers = numberArray1
+    .filter(a => a % 2 !== 0);
+console.log(oddNumbers);
+
+//Template Strings
+console.log("Template Strings");
+
+
+
+
+
