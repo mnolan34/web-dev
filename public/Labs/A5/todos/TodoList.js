@@ -8,7 +8,6 @@ const TodoList = () => {
                     return(TodoItem(todo));
             }).join('')
     }
-
         </ul>
     `);
 }
