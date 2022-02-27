@@ -1,9 +1,16 @@
-PostSummaryItem(post);
+const PostSummaryItem = (post) =>{
+    return(`
+    <li>
+    <class = "list-group-item"
+    <!-- Components of Post-->
+    ${post.topic}
+    ${post.userName}
+    ${post.time}
+    ${post.time}
+    ${post.image}
+   
+    </li>
+    `);
+}
 
-/*
-Example of a Post
-{
-    "topic": "Web Development",    "userName": "ReactJS",    "time": "2h",    "image": "../../images/react-blue.png",
-    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-},
-*/
+export default PostSummaryItem;

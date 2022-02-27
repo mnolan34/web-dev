@@ -1,7 +1,7 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
-    return(`
+    return(`g
             <div class="row">
                        <!-- search field and cog -->
            </div>
