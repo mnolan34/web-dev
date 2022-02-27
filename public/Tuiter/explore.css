@@ -201,9 +201,9 @@
 }
 
 .btn-primary.wd-override-follow {
-    color: black;
-    background-color: white;
-    border-color: white;
+
+
+
     border-radius: 20px;
     float: right;
 }
@@ -219,7 +219,6 @@
 }
 
 .list-group-item.wd-override-special{
-    background-color: black;
     border-style: none;
     padding-left: 4px;
     margin-left: 0;
