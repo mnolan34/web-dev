@@ -1,0 +1,149 @@
+/** Generic Guidelines From Bookmarks */
+.wd-suggested-post{
+    background-color: black;
+    color: white;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    padding-bottom: 10px;
+}
+.wd-suggested-borders{
+    border-color: rgb(47,51,54);
+}
+.wd-color-black{
+    background-color: black;
+}
+
+/** Header guidelines */
+.wd-flex-container{
+    display: flex;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.wd-title-font{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-title-bottom{
+    margin-bottom: 1px;
+}
+
+.wd-margin-left{
+    margin-left: 12px;
+}
+
+.wd-handle-top{
+    margin-top: 1px;
+}
+
+.wd-handle-font{
+    color: lightgray;
+    font-size: 13px;
+}
+
+/** Bookmark guidelines */
+.wd-avatar-photo{
+    float: left;
+    border-radius: 50%;
+    width: 48px;
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-tweet-info-pos{
+    float: left;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.wd-author-font{
+    font-size: 15px;
+    color:white
+}
+
+.wd-AT-font{
+    font-size: 15px;
+    color: lightgray;
+}
+
+/** Section D Guidelines */
+.wd-body-text{
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+/* Image E Guidelines */
+.wd-image-post{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    /**12 px to the right of the avatar image */
+    margin-left: 72px;
+}
+
+/** Section F Guidelines */
+.wd-article-title{
+    color: white;
+    font-size: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-article-words{
+    color: lightgray;
+    font-size: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-article-padding{
+    padding: 12px;
+}
+
+.wd-article-box{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-top-color: black;
+    margin-left: 72px;
+    width: 504px;
+}
+
+/** Section G Guidelines */
+.wd-icon-color{
+    color: white;
+}
+
+.wd-stats-container{
+    display: flex;
+    padding-left: 16px;
+    padding-top: 12px;
+    width: 504px;
+    justify-content: space-evenly;
+}
+
+.wd-heart-color{
+    color: red;
+}
+
+.flex-stats {
+    width: 50px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+}
+
+.float-right{
+    float: right;
+}
+

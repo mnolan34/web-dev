@@ -4,17 +4,18 @@ const HomeScreenItem = (homeTuits) => {
             <div class="wd-suggested-post">
                 <img class ="wd-avatar-photo"
                      src= ${homeTuits.avatarImage} />
-            
-                <p class="wd-tweet-info-pos wd-author-font">
+                
+                <div class="wd-tweet-info-pos wd-author-font">
                     ${homeTuits.screenName} <span class ="wd-handle-font"> ${homeTuits.handle} - ${homeTuits.time}</span>
-                </p>
-                <p class ="wd-body-text">
+                </div>
+                <div class ="m3 wd-body-text">
                     ${homeTuits.caption}
-                </p>
-                <img class ="wd-text-margin wd-image-format"
+                </div>
+                <img class ="wd-text-margin wd-image-post"
                      src=${homeTuits.postPhoto}/>
-
-                <div class ="wd-article-box">
+                
+                <!-- Article Box can go away if not there -->
+                ${homeTuits.postDetails ? `<div class ="wd-article-box">
                     <p class ="wd-article-title">
                         ${homeTuits.postTitle}
                     </p>
@@ -22,7 +23,7 @@ const HomeScreenItem = (homeTuits) => {
                         ${homeTuits.postCaption}
                     </p>
                 </div>
-
+                `: ""}
                 <div class ="wd-author-font wd-icon-color wd-stats-container">
                     <!-- comment button -->
                     <div>
