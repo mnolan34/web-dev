@@ -1,11 +1,11 @@
-import postedTuit from "../postedTuits/homeTuits";
+import homeTuits from "./homeTuits.js";
 import HomeScreenItem from "./HomeScreenItem.js";
 const HomeScreenList = () => {
     return (`
             <ul class="list-group">
             ${
-            postedTuit.map(postedTuit => {
-            return (HomeScreenItem(postedTuit));
+            homeTuits.map(homeTuits => {
+            return (HomeScreenItem(homeTuits));
         }).join('')
     }
             </ul>

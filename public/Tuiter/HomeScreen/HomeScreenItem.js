@@ -30,7 +30,7 @@ const HomeScreenItem = (homeTuits) => {
                     <!-- comment button -->
                     <div>
                         <a class ="wd-icon-color" href="#">
-                            <i class ="fa fa-comment"></i> ${homeTuits.comment}
+                            <i class ="fa fa-comment"></i> ${homeTuits.comments}
                         </a>
                     </div>
                     <!-- retweet button -->

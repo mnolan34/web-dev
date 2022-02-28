@@ -1,6 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostComponent from "./PostComponent.js";
-import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 (function ($) {
     $('#wd-explore').append(`
@@ -12,7 +12,7 @@ import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
             ${PostComponent()}
         </div>
         <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            ${ExploreComponent()}
+            ${PostSummaryList()}
         </div>
         </div>
     `);
