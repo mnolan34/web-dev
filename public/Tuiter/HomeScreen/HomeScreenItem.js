@@ -1,16 +1,21 @@
 const HomeScreenItem = (homeTuits) => {
     return (`
-        
+       
             <div class="wd-suggested-post">
                 <img class ="wd-avatar-photo"
                      src= ${homeTuits.avatarImage} />
                 
                 <div class="wd-tweet-info-pos wd-author-font">
-                    ${homeTuits.screenName} <span class ="wd-handle-font"> ${homeTuits.handle} - ${homeTuits.time}</span>
+                    ${homeTuits.screenName} 
+                    <span class ="wd-handle-font"> 
+                        ${homeTuits.handle} - ${homeTuits.time}
+                    </span>
                 </div>
-                <div class ="m3 wd-body-text">
+                
+                <div class ="mt-0 wd-body-text wd-tweet-info-pos">
                     ${homeTuits.caption}
                 </div>
+                
                 <img class ="wd-text-margin wd-image-post"
                      src=${homeTuits.postPhoto}/>
                 

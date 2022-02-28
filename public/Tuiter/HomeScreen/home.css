@@ -69,16 +69,18 @@
 
 /** Section D Guidelines */
 .wd-body-text{
+    position: relative;
+    margin-left: 72px;
     color: white;
     font-size: 15px;
-    width: 100%;
+    width: 80%;
     padding-bottom: 12px;
 }
 
 /* Image E Guidelines */
 .wd-image-post{
-    width: 504px;
-    height: 264px;
+    width: 80%;
+    height: 60%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-width: 1px;
@@ -115,7 +117,7 @@
     border-color: lightgray;
     border-top-color: black;
     margin-left: 72px;
-    width: 504px;
+    width: 80%;
 }
 
 /** Section G Guidelines */
@@ -125,9 +127,9 @@
 
 .wd-stats-container{
     display: flex;
-    padding-left: 16px;
+    padding-left: 40px;
     padding-top: 12px;
-    width: 504px;
+    width: 80%;
     justify-content: space-evenly;
 }
 
