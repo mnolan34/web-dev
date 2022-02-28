@@ -32,7 +32,7 @@ const NavigationSidebar = () => {
                     <div class = "wd-boot-left-column">
                         <i class="wd-font-black fa fa-bell fa-inverse"></i>
                     </div>
-                    <div class = "wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
+                    <div class = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                         Notifications
                     </div>
                 </a>
@@ -43,7 +43,7 @@ const NavigationSidebar = () => {
                     <div class = "wd-boot-left-column">
                         <i class="fa fa-envelope fa-inverse"></i>
                     </div>
-                    <div class = "wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
+                    <div class = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                         Message
                     </div>
                 </a>

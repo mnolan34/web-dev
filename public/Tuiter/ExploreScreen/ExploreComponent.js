@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     return(`
             <div class="row p-3">
-                <div class = "flex-container">
+                <div class = "d-flex">
                     <div class = "input-group">
                         <span class = "input-group-text wd-override-blend">
                             <i class="fas fa-search"></i>

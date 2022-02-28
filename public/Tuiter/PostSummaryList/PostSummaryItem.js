@@ -7,19 +7,24 @@ const PostSummaryItem = (post) =>{
             <div class = "mt-1 ms-1">
                 <div class = "wd-trending-font">${post.topic}</div>
 
-                <div>${post.userName} <i class="fa fa-check-circle"></i> 
+                <div>
+              
+                   ${post.userName} 
+                    
+                    <i class="fa fa-check-circle"></i> 
                     <span class = "wd-trending-font"> ${post.time}</span>
                 </div>
 
                 <div>
-                    React.js is a component based front end library
-                    that makes it very easy to build Single Page Applications or SPAs
+                    ${post.title} 
                 </div>
                 
-                <div class = "wd-trending-font">
-                     ${post.tweets}
-                 </div>
                 
+                ${post.tweets ? `
+                <div class = "wd-trending-font">
+                     ${post.tweets }
+                 </div>
+                `: ""}
             </div>
             
             <div>
