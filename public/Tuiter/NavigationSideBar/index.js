@@ -6,7 +6,7 @@ const NavigationSidebar = () => {
                 </a>
             <!-- continue the rest of the list -->
             <div class = "list-group-item wd-flex-container">
-                <a href = "../home.html">
+                <a href = "../HomeScreen/home.html">
                     <div class = "me-2 wd-boot-left-column">
                         <i class="fa fa-home fa-inverse"></i>
                     </div>

@@ -8,17 +8,17 @@ const ExploreComponent = () => {
                         <span class = "input-group-text wd-override-blend">
                             <i class="fas fa-search"></i>
                         </span>
-                    <input class = "wd-input-bar mb-2"
+                    <input class = "wd-input-bar mb-1"
                            type = "text"
                            placeholder = "Search Tuiter"/>
                     </div>
                     <!-- Search button-->
-                    <div class = "float-end ms-2 me-2" type = "button">
+                    <div class = "float-end ms-1 me-1" type = "button">
                         <a href = "../explore-settings.html"><i class="fa fa-cog fa-2x fa-inverse"></i></a>
                     </div>
                 </div>
            
-           <ul class="nav mb-2 nav-tabs nav-fill">
+                <ul class="nav nav-tabs nav-fill">
                     <li class="nav-item wd-inUseBorder">
                         <a class="nav-link wd-inUseOverride" href="#">For You</a>
                     </li>
@@ -36,7 +36,7 @@ const ExploreComponent = () => {
                     </li>
                 </ul>
             </div>
-           </ul>
+    
            <!-- image with overlaid text -->
            <div class = "wd-banner-image position-relative">
             <img class = "wd-banner-image wd-border-photo img-fluid"
