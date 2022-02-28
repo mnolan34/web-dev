@@ -7,7 +7,7 @@ export default[
         post: 'FILL HERE',
         comments: '4.2k',
         retuits: '3.5k',
-        likes: '37.5k'},
+        likes: '37.5k',},
     {avatarImage:'https://variety.com/wp-content/uploads/2020/10/New-York-Post-Twitter.png',
         screenName:'New York Post',
         handle: '@nypost',
@@ -16,5 +16,5 @@ export default[
         post: 'FILL HERE',
         comments: '965',
         retuits: '2.4k',
-        likes: '4k'}
-]
+        likes: '4k',},
+];
