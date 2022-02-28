@@ -6,7 +6,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
     $('#wd-explore').append(`
         <div class="row mt-2">
         <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-            ${NavigationSidebar()}
+            ${NavigationSidebar("home")}
         </div>
         <div class = "wd-boot-middle-column col-6">
             ${PostComponent()}
