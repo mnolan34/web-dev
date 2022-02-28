@@ -1,5 +1,3 @@
-import homeTuits from "../postedTuits/homeTuits";
-
 const HomeScreenItem = (homeTuits) => {
     return (`
             <div class="wd-suggested-post">
