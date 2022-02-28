@@ -1,8 +1,9 @@
 const HomeScreenItem = (homeTuits) => {
     return (`
+        
             <div class="wd-suggested-post">
                 <img class ="wd-avatar-photo"
-                     src="${homeTuits.avatarIcon}"/>
+                     src= ${homeTuits.avatarImage} />
             
                 <p class="wd-tweet-info-pos wd-author-font">
                     ${homeTuits.screenName} <span class ="wd-handle-font"> ${homeTuits.handle} - ${homeTuits.time}</span>
@@ -11,18 +12,14 @@ const HomeScreenItem = (homeTuits) => {
                     ${homeTuits.caption}
                 </p>
                 <img class ="wd-text-margin wd-image-format"
-                     src="https://ichef.bbci.co.uk/news/976/cpsprodpb/D9D1/production/_116516755_gettyimages-512808640.jpg"/>
+                     src=${homeTuits.postPhoto}/>
 
                 <div class ="wd-article-box">
                     <p class ="wd-article-title">
-                        The Sea Shanty Renaissance
+                        ${homeTuits.postTitle}
                     </p>
                     <p class ="wd-article-words">
-                        As the souls of the dead fill the space of my mind,
-                        I'll search without sleeping 'til peace I can find.
-                        I fear not the weather, I fear not the sea,
-                        I remember the fallen, do they think of me?,
-                        When their bones in the ocean forever will be.
+                        ${homeTuits.postCaption}
                     </p>
                 </div>
 
