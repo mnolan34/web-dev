@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
@@ -12,15 +12,12 @@ function App() {
   return (
       <BrowserRouter>
           <div className = "container">
-              <Route path="/hello"
-                     exact = {true}
-                     element={<HelloWorld/>}/>
-              <Route path="/"
-                     exact = {true}
-                     element={<Labs/>}/>
-              <Route path="/tuiter"
-                     exact = {true}
-                     element={<Tuiter/>}/>
+                  <Route path = "/hello"
+                        element = {<HelloWorld/>}/>
+                  <Route path = "labs"
+                         element = {<Labs/>}/>
+                  <Route path = "/hello"
+                         element = {<Tuiter/>}/>
           </div>
       </BrowserRouter>
   );
