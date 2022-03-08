@@ -2,6 +2,7 @@ import React from "react";
 import Classes from "./classes/";
 import Styles from "./styles/index.js";
 import ConditionalOutput from "./ConditionalOutput";
+import ToDo from "./ToDo/TodoList";
 
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
+            <ToDo/>
         </div>
     )
 };
