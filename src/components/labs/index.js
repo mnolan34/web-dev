@@ -1,7 +1,7 @@
 import React from "react";
 import Classes from "./classes/";
 import Styles from "./styles/index.js";
-import ConditionalOutput from "./ConditionalOutput";
+import ConditionalOutput from "./ConditionalOutput/index.js";
 import ToDo from "./ToDo/TodoList";
 import {Link} from "react-router-dom";
 
