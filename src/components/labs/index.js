@@ -1,21 +1,15 @@
 import React from "react";
 import Classes from "./classes/";
-import {Link} from "react-router-dom";
+import Styles from "./styles/index.js";
+
 
 const Index = () => {
     return(
-        <>
+        <div>
             <h1>Lab</h1>
+            <Styles/>
             <Classes/>
-
-            <Link to="/hello">
-                Hello
-            </Link> |
-            <Link to="/tuiter">
-                Tuiter
-            </Link>
-
-        </>
+        </div>
     )
 };
 

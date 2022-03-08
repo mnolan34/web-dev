@@ -4,23 +4,23 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 import HelloWorld from "./components/HelloWorld";
-import Labs from "./components/labs/index";
-import Index from "./components/tuiter/index";
+import Labs from "./components/labs/classes/index.js";
+import Tuiter from "./components/tuiter/index.js";
 import {BrowserRouter, Route} from "react-router-dom";
 
 function App() {
   return (
       <BrowserRouter>
           <div className = "container">
-              <Route path="/hello" exact={true}>
-                <HelloWorld/>
-              </Route>
-              <Route path="/labs" exact={true}>
-                <Labs/>
-              </Route>
-              <Route path="/tuiter" exact={true}>
-                <Index/>
-              </Route>
+              <Route path="/hello"
+                     exact = {true}
+                     element={<HelloWorld/>}/>
+              <Route path="/"
+                     exact = {true}
+                     element={<Labs/>}/>
+              <Route path="/tuiter"
+                     exact = {true}
+                     element={<Tuiter/>}/>
           </div>
       </BrowserRouter>
   );

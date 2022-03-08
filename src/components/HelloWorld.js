@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+
 const HelloWorld = () => {
     return(
         <>
@@ -11,8 +12,7 @@ const HelloWorld = () => {
                 Tuiter
             </Link>
         </>
-
-)
+    )
 };
 
 export default HelloWorld;
