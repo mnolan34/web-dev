@@ -3,6 +3,7 @@ import Classes from "./classes/";
 import Styles from "./styles/index.js";
 import ConditionalOutput from "./ConditionalOutput";
 import ToDo from "./ToDo/TodoList";
+import {Link} from "react-router-dom";
 
 
 const Index = () => {
@@ -13,6 +14,13 @@ const Index = () => {
             <Styles/>
             <Classes/>
             <ToDo/>
+
+            <Link to="/hello">
+                Hello
+            </Link> |
+            <Link to="/tuiter">
+                Tuiter
+            </Link>
         </div>
     )
 };

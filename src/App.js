@@ -12,12 +12,15 @@ function App() {
   return (
       <BrowserRouter>
           <div className = "container">
-                  <Route path = "/hello"
-                        element = {<HelloWorld/>}/>
-                  <Route path = "labs"
-                         element = {<Labs/>}/>
-                  <Route path = "/hello"
-                         element = {<Tuiter/>}/>
+                  <Route path = "/hello">
+                        <HelloWorld/>
+                  </Route>
+                  <Route path = "/labs">
+                         <Labs/>
+                  </Route>
+                  <Route path = "/tuiter">
+                         <Tuiter/>
+                  </Route>
           </div>
       </BrowserRouter>
   );
