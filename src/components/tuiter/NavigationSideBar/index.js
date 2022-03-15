@@ -3,30 +3,31 @@ import React from "react";
 const NavigationSidebar = (
     {active = 'explore'
     }) => {
-    if(active === "home") {
         return (
             <>
                 <div className="list-group">
                     <a className ="list-group-item" href="/">
                         <i className ="fab fa-twitter"></i>
                     </a>
-                <!-- continue the rest of the list -->
-         
-                <div className = "list-group-item-action active list-group-item wd-flex-container">
-                    <a href = "../public/HomeScreen/home.html">
-                        <div className = "me-2 wd-boot-left-column">
-                            <i className ="fa fa-home fa-inverse"></i>
-                        </div>
-                        <div className = "ms-1 wd-font-white wd-big-left d-none d-xl-block d-xxl-block">
-                            Home
-                        </div>
-                    </a>
-                </div>
+
+                    <div className = {`list-group-item wd-flex-container
+                        ${active === 'home' ? 'active' : ''}`}>
+
+                        <a href = "../../../../public/Tuiter/HomeScreen/home.html">
+                            <div className = "me-2 wd-boot-left-column">
+                                <i className ="fa fa-home fa-inverse"></i>
+                            </div>
+                            <div className = "ms-1 wd-font-white wd-big-left d-none d-xl-block d-xxl-block">
+                                Home
+                            </div>
+                        </a>
+                    </div>
          
            
-                <div className = "list-group-item wd-flex-container">
+                <div className = {`list-group-item wd-flex-container"
+                     ${active === 'explore' ? 'active' : ''}`}>
             
-                    <a href = "../ExploreScreen/explore.html">
+                    <a href = "../../../../public/Tuiter/ExploreScreen/explore.html">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-hashtag fa-inverse"></i>
                         </div>
@@ -36,10 +37,11 @@ const NavigationSidebar = (
                     </a>
                 </div>
     
-                <div className = "list-group-item">
-                    <a href = "../notifications.html">
+                <div className = {`list-group-item"
+                     ${active === 'notifications' ? 'active' : ''}`}>
+                    <a href = "../../../../public/Tuiter/notifications.html">
                         <div className = "wd-boot-left-column">
-                            <i class="wd-font-black fa fa-bell fa-inverse"></i>
+                            <i className="wd-font-black fa fa-bell fa-inverse"></i>
                         </div>
                         <div className = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Notifications
@@ -47,8 +49,9 @@ const NavigationSidebar = (
                     </a>
                 </div>
     
-                <div className = "list-group-item">
-                    <a href="../messages.html">
+                <div className = {`list-group-item"
+                     ${active === 'messages' ? 'active' : ''}`}>
+                    <a href="../../../../public/Tuiter/messages.html">
                         <div className = "wd-boot-left-column">
                             <i className = "fa fa-envelope fa-inverse"></i>
                         </div>
@@ -59,7 +62,7 @@ const NavigationSidebar = (
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../bookmarks.html">
+                    <a href = "../../../../public/Tuiter/bookmarks.html">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-bookmark fa-inverse"></i>
                         </div>
@@ -70,7 +73,7 @@ const NavigationSidebar = (
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../lists.html">
+                    <a href = "../../../../public/Tuiter/lists.html">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-list fa-inverse"></i>
                         </div>
@@ -81,7 +84,7 @@ const NavigationSidebar = (
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../profile.html">
+                    <a href = "../../../../public/Tuiter/profile.html">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-user fa-inverse"></i>
                         </div>
@@ -104,15 +107,14 @@ const NavigationSidebar = (
                         </div>
                     </a>
                 </div>  
-    
                 </div>
+
                 <div className ="d-grid mt-2">
-                    <a href ="../tuit.html"
+                    <a href ="../../../../public/Tuiter/tuit.html"
                        className ="btn btn-primary btn-block rounded-pill">
                         Tweet</a>
                 </div>
             </>
         );
-    }
 }
 export default NavigationSidebar;

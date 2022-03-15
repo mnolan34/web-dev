@@ -1,11 +1,12 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import NavigationSidebar from "./NavigationSideBar/index";
+import WhoToFollowList from "./WhoToFollowList/WhoToFollowListItem";
 
 const Tuiter = () => {
     return(
         <>
             <NavigationSidebar active="home"/>
+            <WhoToFollowList/>
         </>
 )
 };
