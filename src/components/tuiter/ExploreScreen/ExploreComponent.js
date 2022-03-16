@@ -14,7 +14,7 @@ const ExploreComponent = () => {
                            type = "text"
                            placeholder = "Search Tuiter"/>
                     </div>
-                    <!-- Search button Removed Button Type Here -->
+
                     <div className = "float-end ms-1 me-1">
                         <a href = "../../../../public/Tuiter/explore-settings.html"> <i className ="fa fa-cog fa-2x fa-inverse"> </i> </a>
                     </div>

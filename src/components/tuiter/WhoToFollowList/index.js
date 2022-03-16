@@ -1,12 +1,12 @@
 import React from "react";
+import who from "who.json";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 const WhoToFollowList = () => {
-    return (`
-            <ul class="list-group">
-                <div class = "list-group-item">
-                   <div class = "ms-1">Who to Follow </div>
+    return (
+            <ul className="list-group">
+                <div className = "list-group-item">
+                   <div className = "ms-1">Who to Follow </div>
                 </div>
-            
             {
                 who.map(who => {
                     return (
@@ -15,6 +15,6 @@ const WhoToFollowList = () => {
                 })
     }
             </ul>
-`); }
+); }
 
 export default WhoToFollowList;
