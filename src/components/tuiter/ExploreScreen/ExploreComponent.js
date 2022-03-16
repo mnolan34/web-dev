@@ -3,6 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(
+        <>
             <div className="row p-3">
                 <div className = "d-flex">
                     <div className = "input-group">
@@ -13,8 +14,8 @@ const ExploreComponent = () => {
                            type = "text"
                            placeholder = "Search Tuiter"/>
                     </div>
-                    <!-- Search button-->
-                    <div className = "float-end ms-1 me-1" type = "button">
+                    <!-- Search button Removed Button Type Here -->
+                    <div className = "float-end ms-1 me-1">
                         <a href = "../../../../public/Tuiter/explore-settings.html"> <i className ="fa fa-cog fa-2x fa-inverse"> </i> </a>
                     </div>
                 </div>
@@ -47,6 +48,7 @@ const ExploreComponent = () => {
         </div>
 
         <PostSummaryList/>
+        </>
     );
 }
 export default ExploreComponent;
