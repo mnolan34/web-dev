@@ -1,40 +1,29 @@
 import React from "react";
-
-const NavigationSidebar = (
-    {active = 'explore'
-    }) => {
+import {Link} from "react-router-dom";
+const NavigationSidebar = (active) => {
         return (
             <>
                 <div className="list-group">
-                    <a className ="list-group-item" href="/">
+                    <Link to = "/"
+                          className ="list-group-item">
                         <i className ="fab fa-twitter"></i>
-                    </a>
+                    </Link>
+                    <Link to "tuiter/home"
+                     className = {`list-group-item wd-flex-container
+                        ${active === 'home' ? 'active' : ""}`}>
+                        <i className="fa fa-home"></i>
+                        <span className="d-none d-xl-inline">Home</span>
 
-                    <div className = {`list-group-item wd-flex-container
-                        ${active === 'home' ? 'active' : ''}`}>
-
-                        <a href = "../../../../public/Tuiter/HomeScreen/home.html">
-                            <div className = "me-2 wd-boot-left-column">
-                                <i className ="fa fa-home fa-inverse"></i>
-                            </div>
-                            <div className = "ms-1 wd-font-white wd-big-left d-none d-xl-block d-xxl-block">
-                                Home
-                            </div>
-                        </a>
-                    </div>
+                    </Link>
          
-           
-                <div className = {`list-group-item wd-flex-container"
-                     ${active === 'explore' ? 'active' : ''}`}>
-            
-                    <a href = "../../../../public/Tuiter/ExploreScreen/explore.html">
-                        <div className = "wd-boot-left-column">
-                            <i className ="fa fa-hashtag fa-inverse"></i>
-                        </div>
-                        <div className = "ms-2 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
-                            Explore
-                        </div>
-                    </a>
+                    <Link to "tuiter/explore"
+                        className = {`list-group-item wd-flex-container"
+                            ${active === 'explore' ? 'active' : ''}`}>
+
+                        <i className="fa fa-hashtag"></i>
+                        <span className="d-none d-xl-inline">Explore</span>
+
+                    </Link>
                 </div>
     
                 <div className = {`list-group-item"
@@ -107,7 +96,7 @@ const NavigationSidebar = (
                         </div>
                     </a>
                 </div>  
-                </div>
+
 
                 <div className ="d-grid mt-2">
                     <a href ="../../../../public/Tuiter/tuit.html"

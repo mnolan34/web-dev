@@ -3,7 +3,7 @@ const HomeScreenItem = (homeTuits) => {
     return (
             <div className="wd-suggested-post">
                 <img className ="wd-avatar-photo"
-                     src= {homeTuits.avatarImage} />
+                     alt = {homeTuits.avatarImage} />
                 
                 <div className="wd-tweet-info-pos wd-author-font">
                     {homeTuits.screenName}
@@ -18,8 +18,7 @@ const HomeScreenItem = (homeTuits) => {
                 
                 <img className ="wd-text-margin wd-image-post"
                      src={homeTuits.postPhoto}/>
-                
-                <!-- Article Box can go away if not there -->
+
                 {homeTuits.postDetails ? `<div class ="wd-article-box">
                     <p class ="wd-article-title">
                         {homeTuits.postTitle}
@@ -33,7 +32,7 @@ const HomeScreenItem = (homeTuits) => {
 
                     <div>
                         <a className ="wd-icon-color" href="#">
-                            <i class ="fa fa-comment"></i> {homeTuits.comments}
+                            <i className ="fa fa-comment"></i> {homeTuits.comments}
                         </a>
                     </div>
 

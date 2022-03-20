@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar/index.js";
+import NavigationSidebar from "../NavigationSideBar/index";
 import PostComponent from "./PostComponent.js";
 import PostSummaryList from "../PostSummaryList/index.js";
 
