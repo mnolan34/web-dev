@@ -28,11 +28,11 @@ const PostSummaryItem = (
                 </div>
                 
                 
-                ${post.tweets ? `
+                {post.tweets ?
                 <div className = "wd-trending-font">
-                     {post.tweets }
+                     {post.tweets}
                  </div>
-                `: ""}
+                : ""}
             </div>
             
             <div>
