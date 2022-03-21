@@ -1,9 +1,27 @@
 import React from "react";
-const HomeScreenItem = (homeTuits) => {
+const HomeScreenItem = (
+    {
+        homeTuits = {
+            "avatarImage": "https://www.cnet.com/a/img/PKiQZMbbp8EyG6ma75Xl9-rgznc=/940x0/2018/09/18/e882c199-6ab8-45dc-bf7a-52d36e56c520/bfrlaunch.jpg",
+            "screenName": "lon Musk",
+            "handle": "@elonmusk",
+            "time": "3h",
+            "caption": "Amazing show about @inspiration4x mission!",
+            "postPhoto": "https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSTVj5DHrlahOykYCHrcwL63gTkGzcXodPQgvrJXFqQMFg4Ktgtxmh_fGFJbsMF9BwmIbdW4L17YdJejrxJNwqyEnAP-.jpg?r=3d5",
+            "postDetails": true,
+            "postTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+            "postCaption": "From training to launch to landing, this all access docuseries rides along with the Inspiration4 crew on the first all civilian orbital space..",
+            "postLink": "netflix.com",
+            "comments": "4.2k",
+            "retuits": "3.5k",
+            "likes": "37.5k"
+        }
+    }) => {
+
     return (
             <div className="wd-suggested-post">
                 <img className ="wd-avatar-photo"
-                     alt = {homeTuits.avatarImage} />
+                     src = {homeTuits.avatarImage} />
                 
                 <div className="wd-tweet-info-pos wd-author-font">
                     {homeTuits.screenName}
@@ -16,18 +34,18 @@ const HomeScreenItem = (homeTuits) => {
                     {homeTuits.caption}
                 </div>
                 
-                <img className ="wd-text-margin wd-image-post"
+                <img className ="wd-text-margin wd-postedImage-format"
                      src={homeTuits.postPhoto}/>
 
-                {homeTuits.postDetails ? `<div class ="wd-article-box">
-                    <p class ="wd-article-title">
+                {homeTuits.postDetails ? <div className ="wd-article-box">
+                    <p className ="wd-article-title">
                         {homeTuits.postTitle}
                     </p>
-                    <p class ="wd-article-words">
+                    <p className ="wd-article-words">
                         {homeTuits.postCaption}
                     </p>
                 </div>
-                `: ""}
+                : ""}
                 <div className ="wd-author-font wd-icon-color wd-stats-container">
 
                     <div>
@@ -56,6 +74,6 @@ const HomeScreenItem = (homeTuits) => {
                     </div>
                 </div>
             </div>
-    )
+    );
 }
 export default HomeScreenItem;

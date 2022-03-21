@@ -6,6 +6,7 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './components/tuiter/ExploreScreen/explore.css';
+import './components/tuiter/HomeScreen/bookmarks.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
