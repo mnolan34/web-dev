@@ -9,7 +9,7 @@ const NavigationSidebar = (active) => {
                         <i className ="fab fa-twitter"></i>
                     </Link>
                     <Link to="/tuiter/home"
-                     className = {`list-group-item wd-flex-container
+                     className = {`list-group-item
                         ${active === 'home' ? 'active' : ""}`}>
                         <i className="fa fa-home"></i>
                         <span className="d-none d-xl-inline">Home</span>
@@ -17,20 +17,19 @@ const NavigationSidebar = (active) => {
                     </Link>
          
                     <Link to= "/tuiter/explore"
-                        className = {`list-group-item wd-flex-container"
+                        className = {`list-group-item wd-flex container"
                             ${active === 'explore' ? 'active' : ''}`}>
 
                         <i className="fa fa-hashtag"></i>
                         <span className="d-none d-xl-inline">Explore</span>
 
                     </Link>
-                </div>
     
                 <div className = {`list-group-item wd-flex container"
                      ${active === 'notifications' ? 'active' : ''}`}>
                     <a href = "../../../../public/Tuiter/notifications.html">
                         <div className = "wd-boot-left-column">
-                            <i className="wd-font-black fa fa-bell fa-inverse"></i>
+                            <i className="wd-font-white fa fa-bell fa-inverse"></i>
                         </div>
                         <div className = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Notifications
@@ -95,8 +94,8 @@ const NavigationSidebar = (active) => {
                             More
                         </div>
                     </a>
-                </div>  
-
+                </div>
+                </div>
 
                 <div className ="d-grid mt-2">
                     <a href ="../../../../public/Tuiter/tuit.html"

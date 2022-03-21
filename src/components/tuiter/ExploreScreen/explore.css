@@ -1,0 +1,232 @@
+/** Things mentioned in Preamble for Explore */
+/** Piazza mentioned override */
+.nav{
+    width: 100%;
+}
+
+.wd-debug-border{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.nav-link.wd-text-override{
+    color: lightgray;
+}
+
+.nav-link.wd-inUseOverride{
+    color: white;
+}
+
+.nav-item.wd-inUseBorder{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(29,161,242);
+}
+
+.wd-borders-specific{
+    border-color: rgb(47, 51, 54);
+    border-style: solid
+}
+
+.span.wd-override-no-pad{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.wd-tuit-button{
+    width: 100%;
+    border-radius: 10px;
+}
+.wd-follow-button{
+    float: right;
+    border-radius: 40px/24px;
+}
+
+.wd-color-black{
+    background-color: black;
+}
+
+.wd-font-white{
+    color: white;
+}
+.wd-font-black{
+    color: black;
+}
+
+.wd-font-gray{
+    color: gray;
+}
+
+.wd-banner-image{
+    width: 100%;
+}
+
+.wd-banner-font{
+    font-size: 40px;
+    color: white;
+}
+
+/** BOOTSTRAPS ADD, Build in 3 Columns */
+/** could replace this with col-number */
+.wd-boot-left-column{
+    float: left;
+    width: 10%;
+}
+.wd-big-left{
+    float: left;
+    width: 50%;
+}
+.wd-boot-middle-column{
+    border-top-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 2px;
+}
+
+.wd-border-photo{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-boot-right-column{
+    float: left;
+    width: 25%;
+}
+
+/** Input Bar Section */
+.input-group-text.wd-override-blend{
+    background-color: gray;
+    height: 30px;
+    color: lightgray;
+    border-color: gray;
+    border-radius: 10px;
+}
+
+.wd-input-bar{
+    background-color: gray;
+    color: lightgray;
+    width: 75%;
+    height: 30px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+/** Bookmarks Section */
+
+::placeholder{
+    color: lightgray;
+}
+
+.wd-alignment{
+    padding-left: 0;
+}
+
+/** Challenge advice, justify content */
+.wd-flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-highlight-color{
+    color: rgb(29,161,242);
+    font-size: 15px;
+}
+
+.wd-nav-color{
+    background-color: rgb(29,161,242);
+}
+
+
+.wd-link-color{
+    color: rgb(110,118,125);
+    font-size: 15px;
+}
+
+/** Section C Part */
+.wd-grid-left-text{
+    float: left;
+    width: 75%
+}
+
+.wd-grid-right-image{
+    float: right;
+}
+
+.wd-suggested-post{
+    color: white;
+    border-color: lightgray;
+    /*
+    border-color: rgb(47, 51, 54);
+    Suggested color black, not light gray like shown
+     */
+    border-style: none;
+}
+
+.wd-trending-font{
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-float-left{
+    float: left;
+    width: 50%;
+}
+
+.wd-author-font{
+    color: white;
+    font-size: 15px;
+}
+
+.wd-image-format{
+    /**should be 16px from right */
+    float: right;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.wd-avatar-photo{
+    float: left;
+    border-radius: 50%;
+    width: 48px;
+}
+
+.btn-primary.wd-override-tuit {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.btn-primary.wd-override-follow {
+
+
+
+    border-radius: 20px;
+    float: right;
+}
+
+.list-group.wd-override-group{
+    background-color: black;
+    border-style: none;
+}
+
+.list-group-item.wd-override-inverse{
+    background-color: black;
+    border-style: none;
+}
+
+.list-group-item.wd-override-special{
+    border-style: none;
+    padding-left: 4px;
+    margin-left: 0;
+    padding-right: 10px;
+}
+
+
+.list-group-item.wd-override-gray{
+    background-color: rgb(47, 51, 54);
+    border-style: none;
+}

@@ -5,6 +5,7 @@ import App from './App'; //application entry point
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
+import './components/tuiter/ExploreScreen/explore.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
