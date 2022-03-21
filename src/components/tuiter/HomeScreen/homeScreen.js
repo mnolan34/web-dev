@@ -2,6 +2,7 @@ import React from "react";
 import NavigationSidebar from "../NavigationSideBar/index";
 import PostComponent from "./PostComponent.js";
 import PostSummaryList from "../PostSummaryList/index.js";
+import homeTuits from "./homeTuits.json";
 
 const homeScreen = () => {
     return(
@@ -13,7 +14,7 @@ const homeScreen = () => {
                 {PostComponent()}
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                {PostSummaryList()}
+                {PostSummaryList(homeTuits)}
             </div>
         </div>
     );

@@ -4,11 +4,11 @@ const NavigationSidebar = (active) => {
         return (
             <>
                 <div className="list-group">
-                    <Link to = "/"
+                    <Link to = "/labs"
                           className ="list-group-item">
                         <i className ="fab fa-twitter"></i>
                     </Link>
-                    <Link to "tuiter/home"
+                    <Link to="/tuiter/home"
                      className = {`list-group-item wd-flex-container
                         ${active === 'home' ? 'active' : ""}`}>
                         <i className="fa fa-home"></i>
@@ -16,7 +16,7 @@ const NavigationSidebar = (active) => {
 
                     </Link>
          
-                    <Link to "tuiter/explore"
+                    <Link to= "/tuiter/explore"
                         className = {`list-group-item wd-flex-container"
                             ${active === 'explore' ? 'active' : ''}`}>
 
@@ -26,7 +26,7 @@ const NavigationSidebar = (active) => {
                     </Link>
                 </div>
     
-                <div className = {`list-group-item"
+                <div className = {`list-group-item wd-flex container"
                      ${active === 'notifications' ? 'active' : ''}`}>
                     <a href = "../../../../public/Tuiter/notifications.html">
                         <div className = "wd-boot-left-column">
@@ -38,7 +38,7 @@ const NavigationSidebar = (active) => {
                     </a>
                 </div>
     
-                <div className = {`list-group-item"
+                <div className = {`list-group-item wd-flex container"
                      ${active === 'messages' ? 'active' : ''}`}>
                     <a href="../../../../public/Tuiter/messages.html">
                         <div className = "wd-boot-left-column">
