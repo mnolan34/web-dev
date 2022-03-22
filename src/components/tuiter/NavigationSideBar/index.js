@@ -27,7 +27,7 @@ const NavigationSidebar = (active) => {
     
                 <div className = {`list-group-item wd-flex container"
                      ${active === 'notifications' ? 'active' : ''}`}>
-                    <a href = "../../../../public/Tuiter/notifications.html">
+                    <a href = "#">
                         <div className = "wd-boot-left-column">
                             <i className="wd-font-white fa fa-bell fa-inverse"></i>
                         </div>
@@ -39,7 +39,7 @@ const NavigationSidebar = (active) => {
     
                 <div className = {`list-group-item wd-flex container"
                      ${active === 'messages' ? 'active' : ''}`}>
-                    <a href="../../../../public/Tuiter/messages.html">
+                    <a href="#">
                         <div className = "wd-boot-left-column">
                             <i className = "fa fa-envelope fa-inverse"></i>
                         </div>
@@ -50,7 +50,7 @@ const NavigationSidebar = (active) => {
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../../../../public/Tuiter/bookmarks.html">
+                    <a href = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-bookmark fa-inverse"></i>
                         </div>
@@ -61,7 +61,7 @@ const NavigationSidebar = (active) => {
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../../../../public/Tuiter/lists.html">
+                    <a href = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-list fa-inverse"></i>
                         </div>
@@ -72,7 +72,7 @@ const NavigationSidebar = (active) => {
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "../../../../public/Tuiter/profile.html">
+                    <a href = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-user fa-inverse"></i>
                         </div>

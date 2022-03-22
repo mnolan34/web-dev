@@ -41,7 +41,8 @@ const ExploreComponent = () => {
 
            <div className = "wd-banner-image position-relative">
             <img className = "wd-banner-image wd-border-photo img-fluid"
-                    src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"/>
+                    src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+                    alt="A photo of the starship" />
             <div className = "ms-1 wd-banner-font position-absolute bottom-0 start-20">
                 SpaceX's Starship
             </div>

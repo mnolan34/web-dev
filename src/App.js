@@ -5,7 +5,6 @@ import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/labs/index.js";
-import Tuiter from "./components/tuiter/index.js";
 import HomeScreen from "./components/tuiter/HomeScreen/homeScreen";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import {BrowserRouter, Route} from "react-router-dom";
