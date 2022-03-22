@@ -27,63 +27,63 @@ const NavigationSidebar = (active) => {
     
                 <div className = {`list-group-item wd-flex container"
                      ${active === 'notifications' ? 'active' : ''}`}>
-                    <a href = "#">
+                    <Link to = "#">
                         <div className = "wd-boot-left-column">
                             <i className="wd-font-white fa fa-bell fa-inverse"></i>
                         </div>
                         <div className = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Notifications
                         </div>
-                    </a>
+                    </Link>
                 </div>
     
                 <div className = {`list-group-item wd-flex container"
                      ${active === 'messages' ? 'active' : ''}`}>
-                    <a href="#">
+                    <Link to="#">
                         <div className = "wd-boot-left-column">
                             <i className = "fa fa-envelope fa-inverse"></i>
                         </div>
                         <div className  = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Message
                         </div>
-                    </a>
+                    </Link>
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "#">
+                    <Link to = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-bookmark fa-inverse"></i>
                         </div>
                         <div className = "wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Bookmarks
                         </div>
-                    </a>
+                    </Link>
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "#">
+                    <Link to = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-list fa-inverse"></i>
                         </div>
                         <div className = "ms-1 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             List
                         </div>
-                    </a>
+                    </Link>
                 </div>
     
                 <div className = "list-group-item">
-                    <a href = "#">
+                    <Link to = "#">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-user fa-inverse"></i>
                         </div>
                         <div className = "wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             Profile
                         </div>
-                    </a>
+                    </Link>
                 </div>
     
                 <div className = "list-group-item wd-override-special">
-                    <a href = "#">
+                    <Link to = "#">
                         <div className = "me-1 wd-boot-left-column">
                             <span className ="me-1 wd-override-no-pad fa-stack fa-1x">
                                 <i className ="wd-font-white fas fa-circle fa-fw fa-stack-1x"></i>
@@ -93,14 +93,14 @@ const NavigationSidebar = (active) => {
                         <div className = "ms-2 wd-big-left wd-font-white d-none d-xl-block d-xxl-block">
                             More
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 </div>
 
                 <div className ="d-grid mt-2">
-                    <a href ="../../../../public/Tuiter/tuit.html"
+                    <Link to ="../../../../public/Tuiter/tuit.html"
                        className ="btn btn-primary btn-block rounded-pill">
-                        Tweet</a>
+                        Tweet</Link>
                 </div>
             </>
         );

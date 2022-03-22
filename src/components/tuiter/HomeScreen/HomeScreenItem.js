@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 const HomeScreenItem = (
     {
         homeTuits = {
@@ -21,7 +22,8 @@ const HomeScreenItem = (
     return (
             <div className="wd-suggested-post">
                 <img className ="wd-avatar-photo"
-                     src = {homeTuits.avatarImage} />
+                     src = {homeTuits.avatarImage}
+                    alt = "avatar"/>
                 
                 <div className="wd-tweet-info-pos wd-author-font">
                     {homeTuits.screenName}
@@ -35,7 +37,8 @@ const HomeScreenItem = (
                 </div>
                 
                 <img className ="wd-text-margin wd-postedImage-format"
-                     src={homeTuits.postPhoto}/>
+                     src={homeTuits.postPhoto}
+                    alt= "related to post"/>
 
                 {homeTuits.postDetails ? <div className ="wd-article-box">
                     <p className ="wd-article-title">
@@ -49,28 +52,28 @@ const HomeScreenItem = (
                 <div className ="wd-author-font wd-icon-color wd-stats-container">
 
                     <div>
-                        <a className ="wd-icon-color" href="#">
+                        <Link className ="wd-icon-color" to="#">
                             <i className ="fa fa-comment"></i> {homeTuits.comments}
-                        </a>
+                        </Link>
                     </div>
 
                     <div>
-                        <a className ="wd-icon-color" href="#">
+                        <Link className ="wd-icon-color" to="#">
                             <i className ="fa fa-retweet"></i> {homeTuits.retuits}
-                        </a>
+                        </Link>
                     </div>
                     
 
                     <div className = "wd-heart-color">
-                        <a className = "wd-heart-color" href = "#">
+                        <Link className = "wd-heart-color" to = "#">
                             <i className="fa fa-heart"></i> {homeTuits.likes}
-                        </a>
+                        </Link>
                     </div>
 
                     <div>
-                        <a className = "wd-icon-color" href = "#">
+                        <Link className = "wd-icon-color" to = "#">
                             <i className="fa fa-share"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

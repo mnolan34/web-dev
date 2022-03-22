@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
@@ -16,25 +17,25 @@ const ExploreComponent = () => {
                     </div>
 
                     <div className = "float-end ms-1 me-1">
-                        <a href = "../../../../public/Tuiter/explore-settings.html"> <i className ="fa fa-cog fa-2x fa-inverse"> </i> </a>
+                        <Link to = "../../../../public/Tuiter/explore-settings.html"> <i className ="fa fa-cog fa-2x fa-inverse"> </i> </Link>
                     </div>
                 </div>
            
                 <ul className="nav nav-tabs nav-fill">
                     <li className ="nav-item wd-inUseBorder">
-                        <a className="nav-link wd-inUseOverride" href="#">For You</a>
+                        <Link className="nav-link wd-inUseOverride" to="#">For You</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link wd-text-override" href="#">Trending</a>
+                        <Link className="nav-link wd-text-override" to="#">Trending</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link wd-text-override" href="#">News</a>
+                        <Link className="nav-link wd-text-override" to="#">News</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link wd-text-override" href="#">Sports</a>
+                        <Link to="#" className="nav-link wd-text-override">Sports</Link>
                     </li>
                     <li className="d-none d-md-block d-lg-block d-xl-block d-xxl-block nav-item">
-                        <a className="nav-link wd-text-override" href="#">Entertainment</a>
+                        <Link className="nav-link wd-text-override" to="#">Entertainment</Link>
                     </li>
                 </ul>
             </div>
@@ -42,7 +43,7 @@ const ExploreComponent = () => {
            <div className = "wd-banner-image position-relative">
             <img className = "wd-banner-image wd-border-photo img-fluid"
                     src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
-                    alt="A photo of the starship" />
+                    alt="Banner" />
             <div className = "ms-1 wd-banner-font position-absolute bottom-0 start-20">
                 SpaceX's Starship
             </div>

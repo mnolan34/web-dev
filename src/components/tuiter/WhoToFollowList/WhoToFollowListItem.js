@@ -1,4 +1,3 @@
-import who from "./who.json";
 const WhoToFollowListItem = (
     {
         who = {
@@ -10,7 +9,8 @@ const WhoToFollowListItem = (
             return(
             <div className="list-group-item">
                 <img className="wd-avatar-photo"
-                     src={who.avatarIcon}/>
+                     src={who.avatarIcon}
+                    alt = "avatar"/>
                 <div className="wd-float-left">
                     <div className="wd-font-white ms-1"> {who.userName} <i className="fa fa-check-circle"></i></div>
                     <div className="wd-font-gray ms-1"> @{who.handle} </div>

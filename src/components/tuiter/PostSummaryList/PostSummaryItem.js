@@ -37,7 +37,8 @@ const PostSummaryItem = (
             
             <div>
                  <img className = "mt-1 mb-1 me-1 wd-image-format"
-                      src = {post.image}/>
+                      src = {post.image}
+                        alt = "related to post"/>
              </div>
         </div>
     </div>
