@@ -13,6 +13,9 @@ function App() {
   return (
       <BrowserRouter>
           <div className = "container">
+              <Route path = "/">
+                  <HelloWorld/>
+              </Route>
                   <Route path = "/hello">
                         <HelloWorld/>
                   </Route>

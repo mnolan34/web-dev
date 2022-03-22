@@ -82,7 +82,7 @@ const NavigationSidebar = (active) => {
                     </Link>
                 </div>
     
-                <div className = "list-group-item wd-override-special">
+                <div className = "list-group-item wd-override-inverse">
                     <Link to = "#">
                         <div className = "me-1 wd-boot-left-column">
                             <span className ="me-1 wd-override-no-pad fa-stack fa-1x">
