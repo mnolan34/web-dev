@@ -18,7 +18,7 @@ const NavigationSidebar = (active) => {
          
                     <Link to= "/tuiter/explore"
                         className = {`list-group-item wd-flex container"
-                            ${active === 'explore' ? 'active' : ''}`}>
+                            ${active === 'explore' ? 'active' : ""}`}>
 
                         <i className="fa fa-hashtag"></i>
                         <span className="d-none d-xl-inline">Explore</span>

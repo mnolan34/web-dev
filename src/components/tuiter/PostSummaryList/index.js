@@ -6,12 +6,12 @@ const PostSummaryList = () => {
             <ul className ="list-group">
             {
             post.map(post => {
-            return (
+            return(
                 <PostSummaryItem post={post}/>
             );
         })
     }
             </ul>
-); }
+);}
 
 export default PostSummaryList;
