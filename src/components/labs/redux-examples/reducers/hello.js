@@ -1,5 +1,5 @@
 const hello = () => ({
-    message: 'Hello World'
+    message: "Hello World"
 });
 
 export default hello;
