@@ -18,7 +18,7 @@ const tuitListItem = (
                 "video": "unKvMC3Y1kI"
             },
             "logo-image": "../../../images/react-blue.png",
-            "avatar-image": "../../../images/react-blue.png",
+            "avatarImage": "../../../images/react-blue.png",
             "stats": {
                 "comments": 123,
                 "retuits": 234,
@@ -30,7 +30,7 @@ const tuitListItem = (
     return (
         <div className="wd-suggested-post">
             <img className ="wd-avatar-photo"
-                 src = {homeTuits.avatar-image}
+                 src = {homeTuits.avatarImage}
                  alt = "avatar"/>
 
             <div className="wd-tweet-info-pos wd-author-font">
