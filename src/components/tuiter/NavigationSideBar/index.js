@@ -72,7 +72,7 @@ const NavigationSidebar = (active) => {
                 </div>
     
                 <div className = "list-group-item">
-                    <Link to = "#">
+                    <Link to = "/tuiter/profile">
                         <div className = "wd-boot-left-column">
                             <i className ="fa fa-user fa-inverse"></i>
                         </div>

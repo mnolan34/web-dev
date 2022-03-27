@@ -9,6 +9,7 @@ import Tuiter from "./components/tuiter/index";
 import HomeScreen from "./components/tuiter/home-screen-a7/index";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import NotificationScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
+import ProfileScreen from "./components/tuiter/ProfileScreen/index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
                               element = {<ExploreScreen/>}/>
                         <Route path = "notifications"
                                element = {<NotificationScreen/>}/>
+                        <Route path = "profile"
+                               element = {<ProfileScreen/>}/>
                     </Route>
                   </Route>
               </Routes>
