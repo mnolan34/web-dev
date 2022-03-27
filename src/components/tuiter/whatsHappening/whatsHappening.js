@@ -8,7 +8,8 @@ const WhatsHappening = () => {
     }
     return (
         <>
-      <textarea value={whatsHappening}
+      <textarea className = "p-1"
+          value={whatsHappening}
                 onChange={(event) =>
                     setWhatsHappening(event.target.value)}>
       </textarea>
