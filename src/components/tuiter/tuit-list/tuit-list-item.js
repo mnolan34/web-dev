@@ -14,7 +14,7 @@ const TuitListItem = ({tuit}) =>{
                  alt = "avatar"/>
 
             <div className="wd-tweet-info-pos wd-author-font">
-                {tuit.username}
+                {tuit.postedBy.username}
                 <span className ="ms-1 wd-handle-font">
                      @{tuit.handle} - {tuit.time}
                     </span>
@@ -31,37 +31,43 @@ const TuitListItem = ({tuit}) =>{
                 {tuit.tuit}
             </div>
 
-            <img className ="wd-text-margin wd-postedImage-format"
-                 src={tuit.video}
-                 alt= "related to post"/>
+            {tuit.video ? <div className ="wd-article-box">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xL7RW5NSyJM"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
 
-            {tuit.postDetails ? <div className ="wd-article-box">
-                    <p className ="wd-article-title">
-                        {tuit.title}
-                    </p>
-                    <p className ="wd-article-words">
-                        {tuit.postCaption}
-                    </p>
+                    </iframe>
                 </div>
                 : ""}
+
+            {tuit.image ? <div className ="wd-article-box">
+                    <img src = {tuit.image}
+                        alt = "Related to post"/>
+                </div>
+                : ""}
+
+
+
+
             <div className ="wd-author-font wd-icon-color wd-stats-container">
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-comment"></i> {tuit.comments}
+                        <i className ="fa fa-comment"></i> {tuit.stats.comments}
                     </Link>
                 </div>
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-retweet"></i> {tuit.retuits}
+                        <i className ="fa fa-retweet"></i> {tuit.stats.retuits}
                     </Link>
                 </div>
 
 
                 <div className = "wd-heart-color">
                     <Link className = "wd-heart-color" to = "#">
-                        <i className="fa fa-heart"></i> {tuit.likes}
+                        <i className="fa fa-heart"></i> {tuit.stats.likes}
                     </Link>
                 </div>
 

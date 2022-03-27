@@ -7,6 +7,8 @@ import '../HomeScreen/bookmarks.css';
 import '../ExploreScreen/explore.css';
 
 const TuitList = () => {
+    //const tuits = useSelector(
+       // state => state.tuits);
     return (
         <ul className="ttr-tuits list-group">
             {
