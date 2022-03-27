@@ -1,9 +1,9 @@
+import TuitList from "../tuit-list/index";
+import React from "react";
+
 const HomeScreen = () => {
     return(
-        <div>
-            <h2>Home</h2>
-            <h3>Tuit list</h3>
-        </div>
+        <TuitList/>
     )
 }
 export default HomeScreen;

@@ -1,13 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
-const tuitListItem = (
-    {
-        homeTuits = {
+const tuitListItem = ({
+    homeTuits =
+        {
             "_id": "123",
             "topic": "Web Development",
             "postedBy": {
                 "username": "ReactJS"
-            },
+                },
             "liked": true,
             "verified": false,
             "handle": "ReactJS",
@@ -26,7 +26,6 @@ const tuitListItem = (
             }
         }
     }) => {
-
     return (
         <div className="wd-suggested-post">
             <img className ="wd-avatar-photo"
@@ -34,9 +33,9 @@ const tuitListItem = (
                  alt = "avatar"/>
 
             <div className="wd-tweet-info-pos wd-author-font">
-                {homeTuits.postedBy.username}
-                <span className ="wd-handle-font">
-                        {homeTuits.handle} - {homeTuits.time}
+                {homeTuits.username}
+                <span className ="ms-1 wd-handle-font">
+                     @{homeTuits.handle} - {homeTuits.time}
                     </span>
             </div>
 
@@ -45,7 +44,7 @@ const tuitListItem = (
             </div>
 
             <img className ="wd-text-margin wd-postedImage-format"
-                 src={homeTuits.attachments.video}
+                 src={homeTuits.video}
                  alt= "related to post"/>
 
             {homeTuits.postDetails ? <div className ="wd-article-box">
@@ -61,20 +60,20 @@ const tuitListItem = (
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-comment"></i> {homeTuits.stats.comments}
+                        <i className ="fa fa-comment"></i> {homeTuits.comments}
                     </Link>
                 </div>
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-retweet"></i> {homeTuits.stats.retuits}
+                        <i className ="fa fa-retweet"></i> {homeTuits.retuits}
                     </Link>
                 </div>
 
 
                 <div className = "wd-heart-color">
                     <Link className = "wd-heart-color" to = "#">
-                        <i className="fa fa-heart"></i> {homeTuits.stats.likes}
+                        <i className="fa fa-heart"></i> {homeTuits.likes}
                     </Link>
                 </div>
 

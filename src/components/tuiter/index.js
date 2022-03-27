@@ -5,8 +5,13 @@ import WhoToFollowList
 import "./ExploreScreen/explore.css";
 import "./HomeScreen/bookmarks.css";
 import whoReducer from "./reducers/who-reducer";
-import {createStore} from "redux";
+import tuitsReducer from "./reducers/tuits-reducer";
+import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
+
+const reducer = combineReducers({
+    tuits: tuitsReducer, who: whoReducer
+})
 const store = createStore(whoReducer);
 
 const Tuiter = () => {
