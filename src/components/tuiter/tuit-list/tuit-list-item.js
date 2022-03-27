@@ -21,10 +21,10 @@ const TuitListItem = ({tuit}) =>{
             </div>
 
             <div className = "float-end">
-                <i onClick={() =>
+                <button onClick={() =>
                     deleteTuit(tuit)}
                    className="fas fa-remove fa-2x
-                        fa-pull-right"></i>
+                        fa-pull-right"></button>
             </div>
 
             <div className ="mt-0 wd-body-text wd-tweet-info-pos">
