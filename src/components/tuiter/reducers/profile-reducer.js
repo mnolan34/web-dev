@@ -1,12 +1,12 @@
-import profile from "../data/profiles.json";
+import profiles from "../data/profiles.json";
 
 const profileReducer =
-    (state = profile, action) => {
+    (state = profiles, action) => {
         switch (action.type) {
             case 'save':
                 return action.profile;
             default:
-                return state
+                return profiles
         }
 
     }

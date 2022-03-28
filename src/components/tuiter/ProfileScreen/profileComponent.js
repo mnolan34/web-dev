@@ -2,14 +2,13 @@ import React from "react";
 import {Link} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 
-const Profile = ({profile}) => {
+const ProfileComponent = ({profile}) => {
     const dispatch = useDispatch();
     const editProfile = () => {
         dispatch({type: 'edit-profile', profile});
     };
 
     return (
-            <>
                 <div className="wd-suggested-post">
                     <img className="wd-avatar-photo"
                          src={profile.profilePicture}
@@ -44,7 +43,6 @@ const Profile = ({profile}) => {
                         </div>
                     </div>
                 </div>
-            </>
         );
 }
-export default Profile;
+export default ProfileComponent;
