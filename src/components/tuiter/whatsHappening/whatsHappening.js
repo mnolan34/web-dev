@@ -27,24 +27,27 @@ const WhatsHappening = () => {
 
 
 
-                <div className ="wd-icon-color wd-whatsHappening-container">
-                    <div>
-                        <i className = "pe-3 fa fa-file-image"></i>
+                <div className = "wd-whatsHappening-container">
+                    <div className = "wd-icon-color wd-whatsHappening-container">
+                        <div>
+                            <i className = "pe-3 fa fa-file-image"></i>
+                        </div>
+                        <div>
+                            <i className = "pe-3 fa fa-line-chart"></i>
+                        </div>
+                        <div>
+                            <i className = "pe-3 fa fa-smile"></i>
+                        </div>
+                        <div>
+                            <i className = "fa fa-calendar"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i className = "pe-3 fa fa-line-chart"></i>
+                    <div className = "float-end">
+                        <button className = "float-right btn btn-primary"
+                                    onClick={tuitClickHandler}>
+                                    Tuit
+                        </button>
                     </div>
-                    <div>
-                        <i className = "pe-3 fa fa-smile"></i>
-                    </div>
-                    <div>
-                        <i className = "fa fa-calendar"></i>
-                    </div>
-
-                    <button className = "float-right btn btn-primary"
-                                onClick={tuitClickHandler}>
-                                Tuit
-                    </button>
                 </div>
 
 
