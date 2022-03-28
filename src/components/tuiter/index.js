@@ -12,7 +12,7 @@ import {Provider} from "react-redux";
 const reducer = combineReducers({
     tuits: tuitsReducer, who: whoReducer
 })
-const store = createStore(whoReducer);
+const store = createStore(reducer);
 
 const Tuiter = () => {
     return (

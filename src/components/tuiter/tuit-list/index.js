@@ -1,6 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import tuits from "./tuits.json";
+import tuits from "../data/tuits.json";
 import TuitListItem
     from "./tuit-list-item";
 import '../HomeScreen/bookmarks.css';
