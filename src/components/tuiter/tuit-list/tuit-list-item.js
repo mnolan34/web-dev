@@ -14,7 +14,7 @@ const TuitListItem = ({tuit}) =>{
                  alt = "avatar"/>
 
             <div className="wd-tweet-info-pos wd-author-font">
-                {tuit.username}
+                {tuit.postedBy.username}
                 <span className ="ms-1 wd-handle-font">
                      @{tuit.handle} - {tuit.time}
                     </span>
@@ -41,33 +41,25 @@ const TuitListItem = ({tuit}) =>{
                 </div>
                 : ""}
 
-            {tuit.image ? <div className ="wd-article-box">
-                    <img src = {tuit.image}
-                        alt = "Related to post"/>
-                </div>
-                : ""}
-
-
-
 
             <div className ="wd-author-font wd-icon-color wd-stats-container">
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-comment"></i> {tuit.comments}
+                        <i className ="fa fa-comment"></i> {tuit.stats.comments}
                     </Link>
                 </div>
 
                 <div>
                     <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-retweet"></i> {tuit.retuits}
+                        <i className ="fa fa-retweet"></i> {tuit.stats.retuits}
                     </Link>
                 </div>
 
 
                 <div className = "wd-heart-color">
                     <Link className = "wd-heart-color" to = "#">
-                        <i className="fa fa-heart"></i> {tuit.likes}
+                        <i className="fa fa-heart"></i> {tuit.stats.likes}
                     </Link>
                 </div>
 

@@ -1,4 +1,4 @@
-import tuits from "../data/post.json";
+import tuits from "../data/tuits.json";
 
 const tuitsReducer =
     (state = tuits, action) => {
@@ -28,13 +28,15 @@ const tuitsReducer =
                 const newTuit = {
                     tuit: action.tuit,
                     _id: (new Date()).getTime() + '',
+                    handle: "react",
+                    time: "now",
                     postedBy: {
                         "username": "ReactJS"
                     },
                     stats: {
                         retuits: 111,
                         likes: 222,
-                        replies: 333
+                        comments: 333
                     }
                 }
                 return [
