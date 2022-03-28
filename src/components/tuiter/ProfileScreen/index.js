@@ -1,16 +1,22 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import ProfileComponent from "../ProfileScreen/profileComponent";
+import ProfileComponent from "./profileComponent";
 import '../HomeScreen/bookmarks.css';
 import '../ExploreScreen/explore.css';
 
-const ProfileScreen = () => {
-
+const ProfileList = () => {
+    const profile = useSelector(
+        state => state.profile);
     return (
-        <>
-            <ProfileComponent/>
-        </>
+        <ul className="list-group">
+
+            {
+                profile && profile.map && profile.map(tuit =>
+                    <ProfileComponent key={profile._id}
+                                  profile={profile}/>)
+            }
+        </ul>
     );
 }
 
-export default ProfileScreen;
+export default ProfileList;

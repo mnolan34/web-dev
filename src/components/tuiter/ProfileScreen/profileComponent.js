@@ -1,23 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import {Provider} from "react-redux";
-import {combineReducers, createStore} from "redux";
-import profileReducer from "../reducers/profile-reducer";
 
 const Profile = ({profile}) => {
     const dispatch = useDispatch();
-    const editProfile = (profile) => {
-        dispatch({type: 'edit-profile', profile})
-    }
-
-    const reducer = combineReducers({
-        profile: profileReducer
-    })
-    const store = createStore(reducer);
-
     return (
-        <Provider store={store}>
+
             <div className="wd-suggested-post">
                 <img className="wd-avatar-photo"
                      src={profile.profilePicture}
@@ -30,12 +18,6 @@ const Profile = ({profile}) => {
                     </span>
                 </div>
 
-                <div className="float-end">
-                    <button onClick={() =>
-                        editProfile(profile)}
-                            className="btn btn-primary"> Edit Profile
-                    </button>
-                </div>
 
                 <div className="mt-0 wd-body-text wd-tweet-info-pos">
                     {profile.location} {profile.dateOfBirth} {profile.dateJoined}
@@ -58,7 +40,6 @@ const Profile = ({profile}) => {
                     </div>
                 </div>
             </div>
-        </Provider>
         );
 }
 export default Profile;

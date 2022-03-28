@@ -1,14 +1,16 @@
-{
-  "firstName": "Lord",
-  "lastName": "Phobos",
-  "handle": "PhobosTWRP",
-  "profilePicture": "phobos.png",
-  "bannerPicture": "banner.png",
-  "bio": "Guitarist, Vow of Silence, and Guardian of the Zone",
-  "website": "youtube.com/twrptube",
-  "location": "Space",
-  "dateOfBirth": "12/25/2028",
-  "dateJoined": "12/2000",
-  "followingCount": 3,
-  "followersCount": 600000
-}
+[
+  {
+      "firstName": "Lord",
+      "lastName": "Phobos",
+      "handle": "PhobosTWRP",
+      "profilePicture": "phobos.png",
+      "bannerPicture": "banner.png",
+      "bio": "Guitarist, Vow of Silence, and Guardian of the Zone",
+      "website": "youtube.com/twrptube",
+      "location": "Space",
+      "dateOfBirth": "12/25/2028",
+      "dateJoined": "12/2000",
+      "followingCount": 3,
+      "followersCount": 600000
+  }
+]
