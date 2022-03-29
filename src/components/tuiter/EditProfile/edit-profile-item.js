@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import React, {useState} from "react";
 
 const EditProfileItem = () => {
-    const [profile, setProfile] = useState({profile: ''});
+    const [profile, setProfile] = useState({profile: 'profile'});
     console.log(profile);
     const nameChangeHandler = (event) => {
         const newValue = event.target.value;
