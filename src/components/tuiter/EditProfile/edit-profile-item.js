@@ -11,6 +11,7 @@ const EditProfileItem = () => {
         };
         setProfile(newName);
     }
+
     return(
         <div className="list-group-item">
             <div className = "wd-suggested-post">
