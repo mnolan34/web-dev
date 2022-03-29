@@ -1,6 +1,19 @@
 const ProfileComponent = (profile) => {
+    console.log(profile);
     return(
         <div className="list-group-item">
+            <div className = "wd-suggested-post">
+                <p>
+                    {profile.firstName} {profile.lastName}
+                </p>
+                <p>
+                    5, 128 tuits
+                </p>
+            </div>
+            <img className = "wd-banner-image"
+                 src = {profile.bannerPicture}
+                 alt = "banner"/>
+
             <img className="wd-avatar-photo"
                  src={profile.profilePhoto}
                  alt = "avatar"/>

@@ -1,6 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import ProfileComponent from "./profileComponent";
+import EditProfileItem from "./edit-profile-item";
 import '../HomeScreen/bookmarks.css';
 import '../ExploreScreen/explore.css';
 
@@ -12,7 +12,7 @@ const EditProfileList = ({Profiles}) => {
         <ul className="list-group">
             {profiles.map(profile => {
                 return (
-                    <ProfileComponent profile={profile}/>
+                    <EditProfileItem profile={profile}/>
                 );
             })
             }
