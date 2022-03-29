@@ -5,7 +5,7 @@ import '../HomeScreen/bookmarks.css';
 import '../ExploreScreen/explore.css';
 
 
-const EditProfileList = ({Profiles}) => {
+const EditProfileList = () => {
     const profiles = useSelector(
         state => state.profiles);
     return (

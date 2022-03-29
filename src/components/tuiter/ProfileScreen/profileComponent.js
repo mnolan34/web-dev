@@ -31,7 +31,7 @@ const ProfileComponent = (profile) => {
                 </div>
             </div>
 
-            <Link to = "/editprofile">
+            <Link to = "/tuiter/editprofile">
                 <button className="btn btn-primary wd-override-follow">
                     Edit Profile
                 </button>
