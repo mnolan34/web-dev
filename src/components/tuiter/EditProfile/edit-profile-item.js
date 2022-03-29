@@ -1,8 +1,15 @@
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useState} from "react";
 
 const EditProfileItem = (profile) => {
-    console.log(profile);
+    const [profile, setProfile] = useState({profile: ''});
+    const nameChangeHandler = (event) => {
+        const newValue = event.target.value;
+        const newName = {
+            firstName: newValue
+        };
+        setProfile(newName);
+    }
     return(
         <div className="list-group-item">
             <div className = "wd-suggested-post">
@@ -29,28 +36,43 @@ const EditProfileItem = (profile) => {
                  src = {profile.profile.profilePicture}
                  alt = "avatar"/>
 
-            <div className="list-group-item">
-                <textarea className = "wd-input-bar">
-                    {profile.profile.firstName}
-                </textarea>
+            <div className=" wd-flex-container list-group-item">
+                Name
+                <div>
+                    <textarea
+                        onChange={nameChangeHandler}
+                        value={profile.profile.firstName}
+                        className = "form-control wd-input-bar">
+                        {profile.profile.firstName}
+                    </textarea>
+                </div>
             </div>
 
-            <div className = "list-group-item">
-                <textarea className = "wd-input-bar">
-                    {profile.profile.bio}
-                </textarea>
+            <div className = "wd-flex-container list-group-item">
+                Bio
+                <div>
+                    <textarea className = "wd-input-bar">
+                        {profile.profile.bio}
+                    </textarea>
+                </div>
             </div>
 
-            <div className = "list-group-item">
-                <textarea className = "wd-input-bar">
-                    {profile.profile.location}
-                </textarea>
+            <div className = "wd-flex-container list-group-item">
+                Location
+                <div>
+                    <textarea className = "wd-input-bar">
+                        {profile.profile.location}
+                    </textarea>
+                </div>
             </div>
 
-            <div className = "list-group-item">
-                <textarea className = "wd-input-bar">
-                    {profile.profile.website}
-                </textarea>
+            <div className = "wd-flex-contatiner list-group-item">
+                Website
+                <div>
+                    <textarea className = "wd-input-bar">
+                        {profile.profile.website}
+                    </textarea>
+                </div>
             </div>
 
 
