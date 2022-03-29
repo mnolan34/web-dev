@@ -8,15 +8,13 @@ import '../ExploreScreen/explore.css';
 const ProfileList = () => {
     const profiles = useSelector(
         state => state.profiles);
-    console.log(profiles);
     return (
             <ul className="list-group">
 
-                {profiles.map(profile => {
-                        return (
-                            <ProfileComponent profile={profile}/>
-                        );
-                    })
+                {
+                    profiles.map && profiles.map(profile =>
+                        <ProfileComponent key={profile._id}
+                                      profile={profile}/>)
                 }
             </ul>
     );

@@ -1,30 +1,57 @@
+import {Link} from "react-router-dom";
+import React from "react";
 const ProfileComponent = (profile) => {
     console.log(profile);
     return(
         <div className="list-group-item">
             <div className = "wd-suggested-post">
-                <p>
-                    {profile.firstName} {profile.lastName}
+
+                <p className = "wd-banner-font">
+                    <i className = "me-2 fas fa-arrow-left"></i>
+                    {profile.profile.firstName} {profile.profile.lastName}
                 </p>
-                <p>
+                <p className = "wd-handle-font">
                     5, 128 tuits
                 </p>
             </div>
             <img className = "wd-banner-image"
-                 src = {profile.bannerPicture}
+                 src = {profile.profile.bannerPicture}
                  alt = "banner"/>
 
             <img className="wd-avatar-photo"
-                 src={profile.profilePhoto}
+                 src = {profile.profile.profilePicture}
                  alt = "avatar"/>
             <div className="wd-float-left">
-                <div className="wd-font-white ms-1"> {profile.userName} <i className="fa fa-check-circle"></i></div>
-                <div className="wd-font-gray ms-1"> @{profile.handle} </div>
+                <div className="wd-font-gray ms-1"> @{profile.profile.handle} </div>
             </div>
 
-            <button className="btn btn-primary wd-override-follow">
-                Follow
-            </button>
+            <div className = "d-inline-flex">
+                <div className = "wd-font-white p-1">
+                    {profile.profile.bio}
+                </div>
+            </div>
+
+            <Link to = "/editprofile">
+                <button className="btn btn-primary wd-override-follow">
+                    Edit Profile
+                </button>
+            </Link>
+
+            <div className = "wd-stats-container">
+                <div className = "wd-handle-font">
+                        <i className ="fas fa-map-marker-alt"></i> {profile.profile.location}
+                </div>
+
+                <div className = "wd-handle-font">
+                        <i className ="fas fa-birthday-cake"></i> Born {profile.profile.dateOfBirth}
+                </div>
+
+
+                <div className = "wd-handle-font">
+                        <i className="fas fa-calendar-alt"></i> Joined {profile.profile.dateJoined}
+                </div>
+            </div>
+
         </div>
     )}
 
