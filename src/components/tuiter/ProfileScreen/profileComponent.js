@@ -1,5 +1,3 @@
-import profile from "../data/profiles.json"
-
 const ProfileComponent = (profile) => {
     return(
         <div className="list-group-item">
