@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import * as service from "../../../../services/tuits-service";
+import * as service from "../../../services/tuits-service";
 import TuitListItem
     from "./tuit-list-item";
 import '../HomeScreen/bookmarks.css';
@@ -10,7 +10,7 @@ const TuitList = () => {
     const tuits = useSelector(
         state => state.tuits);
     const dispatch = useDispatch();
-    const findALlTUits = async() =>{
+    const findAllTuits = async() =>{
         const tuits = await service.findAllTuits();
         dispatch({
             type: 'FIND_ALL_TUITS',
