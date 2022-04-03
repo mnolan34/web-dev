@@ -1,12 +1,10 @@
 import React from "react";
+import {deleteTuit, findAllTuits} from "../../actions/tuits-action";
 import {Link} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 
 const TuitListItem = ({tuit}) =>{
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
     return (
         <div className="wd-suggested-post">
             <img className ="wd-avatar-photo"
@@ -20,12 +18,10 @@ const TuitListItem = ({tuit}) =>{
                     </span>
             </div>
 
-            <div className = "float-end">
-                <button onClick={() =>
-                    deleteTuit(tuit)}
-                   className="fas fa-remove fa-2x
-                        fa-pull-right"></button>
-            </div>
+            <i className = "fas fa-remove float-end"
+               onClick={() => deleteTuit(
+                   dispatch, tuit)}></i>
+
 
             <div className ="mt-0 wd-body-text wd-tweet-info-pos">
                 {tuit.tuit}
