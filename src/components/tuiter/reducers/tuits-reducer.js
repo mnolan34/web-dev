@@ -1,4 +1,6 @@
 //import tuits from "../data/tuits.json";
+import {FIND_ALL_TUITS} from "../../actions/tuits-action";
+
 const tuitsReducer = (state = [], action) => {
         switch (action.type) {
             case 'FIND_ALL_TUITS':
