@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {findAllTuits} from "../../actions/tuits-action";
+import {createTuit, deleteTuit, findAllTuits} from "../../actions/tuits-action";
 import TuitListItem
     from "./tuit-list-item";
 import '../HomeScreen/bookmarks.css';

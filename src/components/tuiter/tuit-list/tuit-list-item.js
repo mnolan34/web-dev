@@ -1,5 +1,5 @@
 import React from "react";
-import {deleteTuit, findAllTuits} from "../../actions/tuits-action";
+import {createTuit, deleteTuit, findAllTuits} from "../../actions/tuits-action";
 import {Link} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 
@@ -54,9 +54,11 @@ const TuitListItem = ({tuit}) =>{
 
 
                 <div className = "wd-heart-color">
-                    <Link className = "wd-heart-color" to = "#">
-                        <i className="fa fa-heart"></i> {tuit.stats.likes}
-                    </Link>
+                    Likes: {tuit.stats.likes}
+                    <i onClick={()=> updateTUit(dispatch, {
+                        ...tuit,
+                        likes: tuit.stats.likes + 1
+                    })} className="far fa-thumbs-up ms-2"></i>
                 </div>
 
                 <div>

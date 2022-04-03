@@ -42,6 +42,7 @@ const WhatsHappening = () => {
                             <i className = "fa fa-calendar"></i>
                         </div>
                     </div>
+
                     <div className = "float-end">
                         <button className = "float-right btn btn-primary"
                                     onClick={tuitClickHandler}>
