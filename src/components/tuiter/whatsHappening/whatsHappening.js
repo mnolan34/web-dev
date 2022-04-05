@@ -21,7 +21,7 @@ const WhatsHappening = () => {
 
 
             <div className ="mt-0 wd-body-text wd-tweet-info-pos">
-                 <textarea className = "wd-body-text float-end p-1 wd-input-bar"
+                 <textarea className = "form-control w-75 wd-input-bar"
                            placeholder = "What's happening?"
                            value={whatsHappening}
                            onChange={(e) =>
