@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
+    //new for 6.4 in A8
+    const [newTuit, setNewTuit] = useState({tuit: 'New Tuit'});
+
     let [whatsHappening, setWhatsHappening]
         = useState('');
     const dispatch = useDispatch();
@@ -20,11 +23,11 @@ const WhatsHappening = () => {
                  <textarea className = "wd-body-text float-end p-1 wd-input-bar"
                            placeholder = "What's happening?"
                            value={whatsHappening}
-                           onChange={(event) =>
-                               setWhatsHappening(event.target.value)}>
+                           onChange={(e) =>
+                               setNewTuit({...newTuit,
+                               tuit: e.target.value})}>
                   </textarea>
             </div>
-
 
 
                 <div className = "wd-whatsHappening-container">
@@ -44,8 +47,9 @@ const WhatsHappening = () => {
                     </div>
 
                     <div className = "float-end">
-                        <button className = "float-right btn btn-primary"
-                                    onClick={tuitClickHandler}>
+                        <button onClick= {()=>
+                                        createTuit(dispatch, newTuit)}
+                                className = "btn btn-primary float-end">
                                     Tuit
                         </button>
                     </div>
