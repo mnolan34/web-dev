@@ -5,14 +5,7 @@ import {createTuit} from "../../actions/tuits-action";
 const WhatsHappening = () => {
     //new for 6.4 in A8
     const [newTuit, setNewTuit] = useState({tuit: 'New Tuit'});
-
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-        tuit: whatsHappening});
-    }
     return (
         <div className="wd-suggested-post">
             <img className ="wd-avatar-photo"
@@ -46,13 +39,12 @@ const WhatsHappening = () => {
                         </div>
                     </div>
 
-                    <div className = "float-end">
-                        <button onClick= {()=>
-                                        createTuit(dispatch, newTuit)}
-                                className = "btn btn-primary float-end">
-                                    Tuit
-                        </button>
-                    </div>
+                    <button onClick= {() =>
+                        createTuit(dispatch, newTuit)}
+                            className = "btn btn-primary float-end">
+                        Tuit
+                    </button>
+
                 </div>
 
 
