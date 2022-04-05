@@ -23,7 +23,6 @@ const WhatsHappening = () => {
             <div className ="mt-0 wd-body-text wd-tweet-info-pos">
                  <textarea className = "form-control w-75 wd-input-bar"
                            placeholder = "What's happening?"
-                           value={whatsHappening}
                            onChange={(e) =>
                                setNewTuit({...newTuit,
                                tuit: e.target.value})}>
