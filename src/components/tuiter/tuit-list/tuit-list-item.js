@@ -55,7 +55,7 @@ const TuitListItem = ({tuit}) =>{
 
                 <div className = "wd-heart-color">
                     Likes: {tuit.stats.likes}
-                    <i onClick={()=> updateTUit(dispatch, {
+                    <i onClick={()=> updateTuit(dispatch, {
                         ...tuit,
                         likes: tuit.stats.likes + 1
                     })} className="far fa-thumbs-up ms-2"></i>
