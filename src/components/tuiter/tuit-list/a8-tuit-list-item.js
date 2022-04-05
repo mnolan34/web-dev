@@ -1,5 +1,5 @@
 import React from "react";
-import {createTuit, deleteTuit, findAllTuits} from "../../actions/tuits-action";
+import {deleteTuit} from "../../actions/tuits-action";
 import {Link} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 

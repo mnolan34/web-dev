@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {createTuit, deleteTuit, findAllTuits}
+import {findAllTuits}
     from "../../actions/tuits-action";
 import TuitListItem from "./a8-tuit-list-item";
 
