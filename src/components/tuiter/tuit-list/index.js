@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {createTuit, deleteTuit, findAllTuits} from "../../actions/tuits-action";
 import TuitListItem
-    from "./tuit-list-item";
+    from "./a8-tuit-list-item";
 import '../HomeScreen/bookmarks.css';
 import '../ExploreScreen/explore.css';
 

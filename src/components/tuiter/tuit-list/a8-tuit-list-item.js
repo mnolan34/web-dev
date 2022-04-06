@@ -27,30 +27,8 @@ const TuitListItem = ({tuit}) =>{
                 {tuit.tuit}
             </div>
 
-            {tuit.video ? <div className ="wd-article-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xL7RW5NSyJM"
-                            title="YouTube video player" frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen>
-
-                    </iframe>
-                </div>
-                : ""}
-
 
             <div className ="wd-author-font wd-icon-color wd-stats-container">
-
-                <div>
-                    <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-comment"></i> {tuit.stats.comments}
-                    </Link>
-                </div>
-
-                <div>
-                    <Link className ="wd-icon-color" to="#">
-                        <i className ="fa fa-retweet"></i> {tuit.stats.retuits}
-                    </Link>
-                </div>
 
                 <div className = "wd-heart-color">
                     Likes: {tuit.stats.likes}
