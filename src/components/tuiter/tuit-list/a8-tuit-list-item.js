@@ -30,7 +30,7 @@ const TuitListItem = ({tuit}) =>{
 
             <div className ="wd-author-font wd-icon-color wd-stats-container">
 
-                <div className = "wd-heart-color">
+                <div className = "wd-font-white">
                     Likes: {tuit.likes}
                     <i onClick={()=> updateTuit(dispatch, {
                         ...tuit,
@@ -38,7 +38,7 @@ const TuitListItem = ({tuit}) =>{
                     })} className="far fa-thumbs-up ms-2"></i>
                 </div>
 
-                <div className = "wd-heart-color">
+                <div className = "wd-font-white">
                     Likes: {tuit.dislikes}
                     <i onClick={()=> updateTuit(dispatch, {
                         ...tuit,
