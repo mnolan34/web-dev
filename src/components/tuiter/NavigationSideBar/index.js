@@ -8,7 +8,7 @@ const NavigationSidebar = (active) => {
                           className ="list-group-item">
                         <i className ="fab fa-twitter"></i>
                     </Link>
-                    <Link to="/tuiter/home"
+                    <Link to="/tuiter"
                      className = {`list-group-item
                         ${active === 'home' ? 'active' : ""}`}>
                         <i className="fa fa-home"></i>
