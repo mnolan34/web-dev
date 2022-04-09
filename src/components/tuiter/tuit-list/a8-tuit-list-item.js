@@ -12,10 +12,7 @@ const TuitListItem = ({tuit}) =>{
                  alt = "avatar"/>
 
             <div className="wd-tweet-info-pos wd-author-font">
-                {tuit.username || tuit.postedBy.username}
-                <span className ="ms-1 wd-handle-font">
-                     @{tuit.handle} - {tuit.time}
-                    </span>
+                {tuit.postedBy.username || tuit.username}
             </div>
 
             <i className = "fas fa-remove float-end"
