@@ -10,7 +10,6 @@ const TuitListItem = ({tuit}) =>{
             <img className ="wd-avatar-photo"
                  src = {tuit.avatarImage}
                  alt = "avatar"/>
-
             <div className="wd-tweet-info-pos wd-author-font">
                 {tuit.postedBy.username || tuit.username}
             </div>
